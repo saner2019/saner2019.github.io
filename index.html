@@ -1,7 +1,261 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <title>ICSME2017</title>
+  <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="http://cdn.bootcss.com/bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+  <script>
+      var pager = 0;
+      function callPager(i) {
+       if(i==0) {
+         $("#1").show(); 
+         $("#2").hide(); 
+         $("#3").hide(); 
+         $("#4").hide(); 
+        } else if(i==1) {
+       $("#1").hide(); 
+       $("#2").show(); 
+       $("#3").hide(); 
+       $("#4").hide(); 
+        } else if(i==2) {
+       $("#1").hide(); 
+       $("#2").hide(); 
+       $("#3").show(); 
+       $("#4").hide(); 
+        } else if(i==3) {
+       $("#1").hide(); 
+       $("#2").hide(); 
+       $("#3").hide(); 
+       $("#4").show(); 
+        } else {
+         $("#1").hide(); 
+       $("#2").hide(); 
+       $("#3").hide(); 
+       $("#4").hide();            
+        }  
+      }
+    
+      function nextPager() {
+        pager = pager + 1;
+        if(pager == 4) pager = 0;
+        callPager(pager);
+      }
+    
+      function prevPager() {
+        pager = pager - 1;
+        if(pager == -1) pager = 3;
+        callPager(pager);
+      }  
+      
+      function setAnimation(id, effect) {
+        $("#"+id).removeClass().addClass(effect +' animated').
+        one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        });
+        
+      }
+      
+      
+    $(document).ready(function(){ 
+
+    $('.pager .pulsante').click(function(e) {
+          $(this).blur();
+    });     
+      
+    callPager(pager);  
+    
+    /*
+    $("#mainTitle").click(function() {
+      setAnimation("mainTitle", "hinge");
+      setTimeout('setAnimation("mainTitle","bounceInRight");',3000);
+    });
+    
+    $("#subTitle").click(function() {
+      setAnimation("subTitle", "hinge");
+      setTimeout('setAnimation("subTitle","bounceInLeft");',3000);
+    });   
+    */
+    }); 
+    </script>
+</head>
 <body>
-<h1>Hello ICSME 2017</h1>
-<p>Official site is still under construction.</p>
+<nav class="navbar navbar-default" role="navigation">
+  
+  <div class="container-fluent">
+    
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ICSME2017</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Registration</a></li>
+        <li><a href="#">Venue</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Week at a Glance</a></li>
+            
+            <li class="divider"></li>
+            <li><a href="#">Keynotes</a></li>
+            <li><a href="#">Accepted Papers</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Program(PDF)</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Important Dates</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Research Track</a></li>
+            <li><a href="#">ERA Track</a></li>
+            <li><a href="#">Industry Track</a></li>
+            <li><a href="#">Tool Demos Track</a></li>
+            <li><a href="#">Artifacts Track</a></li>
+            <li><a href="#">Doctoral Track</a></li>
+            <li><a href="#">Technology Track</a></li>
+
+
+           </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="Organization Committee.html">Organizing Committee</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Social Events</a></li>
+      </ul>
+        
+      
+    
+    </div><!-- /.navbar-collapse -->
+    
+  </div><!-- /.container-fluid -->
+  
+</nav>
+
+<div class="container"> 
+
+  <img src="ICSME/001.jpg" class="img-responsive" alt="Responsive image">
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12">
+	<div class="row">
+		
+
+    <div class="col-md-4" role="main">
+
+      <div class="panel panel-warning">
+            <div class="panel-heading">
+              <h3 class="panel-title">Latest news</h3>
+            </div>
+            <div class="panel-body" style="pdding-bottom: 0;height: 100px;overflow-y: scroll;">
+            </div>
+      </div>
+
+      <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Important dates</h3>
+            </div>
+            <div class="panel-body">
+    <div id="1" style="display: block;">        
+  <table class="dates">
+  <thead><tr><th colspan="2"> 1 </th></tr></thead>
+    <tbody>
+    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+  </tbody>
+  </table>
+  </div>
+  <div id="2" style="display: none;">
+  <table class="dates">
+  <thead><tr><th colspan="2"> 2 </th></tr></thead>
+    <tbody>
+    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>    
+  </tbody>    
+  </table>
+    <!--  div class="alert alert-warning" role="alert">Coming soon...</div-->
+  </div>
+  <div id="3" style="display: none;">
+  <table class="dates">
+  <thead><tr><th colspan="2"> 3 </th></tr></thead>
+    <tbody>
+    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>     
+  </tbody>    
+  </table>
+    <!-- div class="alert alert-warning" role="alert">Coming soon...</div-->
+  </div>
+  <div id="4" style="display: none;">
+  <table class="dates">
+  <thead><tr><th colspan="2"> 4 </th></tr></thead>
+    <tbody>
+    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>
+    <tr><td>  </td><td>  </td></tr>     
+  </tbody>    
+  </table>    
+    <!--  div class="alert alert-warning" role="alert">Coming soon...</div-->
+  </div>
+    <ul class="pager" style="margin-top:5px;margin-bottom:0px;">
+    <li class="previous"><a class="pulsante" href="javascript:prevPager();" style="border-radius: 4px;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
+    <li class="next"><a class="pulsante" href="javascript:nextPager();" style="border-radius: 4px;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
+    </ul>
+
+  </div>
+  </div>
+      <h5>Shanghai,the City of Creation</h5>
+      <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
+      </div>
+      
+
+      <h5>Fudan University</h5>
+      <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+      </div>
+	</div>
+    
+    <div class="col-md-8">
+      <h2>Welcome</h2> 
+      <hr>
+      <p>...</p>
+
+        
+    
+    </div>
+  </div>
+
+  <footer class="icsme2017" role="contentinfo" >
+  <div class="container">
+    <div class="row">
+      <p class="lead text-center">Sponsors</p>
+    </div>
+  </div>
+  </footer>
+
 </body>
 </html>
