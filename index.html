@@ -7,46 +7,84 @@
   <script src="bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
   <script>
-      var pager = 0;
-      function callPager(i) {
-       if(i==0) {
-         $("#1").show(); 
-         $("#2").hide(); 
-         $("#3").hide(); 
-         $("#4").hide(); 
+      var datepager = 0;
+      function callDatePager(i) {
+        if(i==0) {
+          $("#date1").show(); 
+          $("#date2").hide(); 
+          $("#date3").hide(); 
+          $("#date4").hide(); 
+          $("#date5").hide(); 
         } else if(i==1) {
-       $("#1").hide(); 
-       $("#2").show(); 
-       $("#3").hide(); 
-       $("#4").hide(); 
+          $("#date1").hide(); 
+          $("#date2").show(); 
+          $("#date3").hide(); 
+          $("#date4").hide(); 
+          $("#date5").hide(); 
         } else if(i==2) {
-       $("#1").hide(); 
-       $("#2").hide(); 
-       $("#3").show(); 
-       $("#4").hide(); 
+          $("#date1").hide(); 
+          $("#date2").hide(); 
+          $("#date3").show(); 
+          $("#date4").hide(); 
+          $("#date4").hide(); 
+          $("#date5").hide();
         } else if(i==3) {
-       $("#1").hide(); 
-       $("#2").hide(); 
-       $("#3").hide(); 
-       $("#4").show(); 
+          $("#date1").hide(); 
+          $("#date2").hide(); 
+          $("#date3").hide(); 
+          $("#date4").show(); 
+          $("#date5").hide();
+        } else if(i==4) {
+          $("#date1").hide(); 
+          $("#date2").hide(); 
+          $("#date3").hide(); 
+          $("#date4").hide(); 
+          $("#date5").show();
         } else {
-         $("#1").hide(); 
-       $("#2").hide(); 
-       $("#3").hide(); 
-       $("#4").hide();            
+          $("#date1").hide(); 
+          $("#date2").hide(); 
+          $("#date3").hide(); 
+          $("#date4").hide();
+          $("#date5").hide();            
         }  
       }
     
-      function nextPager() {
-        pager = pager + 1;
-        if(pager == 4) pager = 0;
-        callPager(pager);
+      function nextDatePager() {
+        datepager = datepager + 1;
+        if(datepager == 5) datepager = 0;
+        callDatePager(datepager);
       }
     
-      function prevPager() {
-        pager = pager - 1;
-        if(pager == -1) pager = 3;
-        callPager(pager);
+      function prevDatePager() {
+        datepager = datepager - 1;
+        if(datepager == -1) datepager = 4;
+        callDatePager(datepager);
+      }  
+
+      var filmpager = 0;
+      function callFilmPager(i) {
+       if(i==0) {
+          $("#film1").show(); 
+          $("#film2").hide();  
+        } else if(i==1) {
+          $("#film1").hide(); 
+          $("#film2").show();  
+        } else {
+          $("#film1").hide(); 
+          $("#film2").hide();             
+        }  
+      }
+    
+      function nextFilmPager() {
+        filmpager = filmpager + 1;
+        if(filmpager == 2) filmpager = 0;
+        callFilmPager(filmpager);
+      }
+    
+      function prevFilmPager() {
+        filmpager = filmpager - 1;
+        if(filmpager == -1) filmpager = 1;
+        callFilmPager(filmpager);
       }  
       
       function setAnimation(id, effect) {
@@ -82,7 +120,7 @@
 <body>
 <nav class="navbar navbar-default" role="navigation">
   
-  <div class="container-fluent">
+  <div class="container">
     
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -99,8 +137,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
        
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Registration</a></li>
-        <li><a href="#">Venue</a></li>
+        <li><a href="ToBeAnnounced.html">Registration</a></li>
+        <li><a href="ToBeAnnounced.html">Venue</a></li>
+        <li><a href="ToBeAnnounced.html">Program</a></li>
+        <!--
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -114,20 +154,15 @@
             <li><a href="#">Program(PDF)</a></li>
           </ul>
         </li>
+      -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Important Dates</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Research Track</a></li>
-            <li><a href="#">ERA Track</a></li>
-            <li><a href="#">Industry Track</a></li>
-            <li><a href="#">Tool Demos Track</a></li>
-            <li><a href="#">Artifacts Track</a></li>
-            <li><a href="#">Doctoral Track</a></li>
-            <li><a href="#">Technology Track</a></li>
-
-
+            <li><a href="ToBeAnnounced.html">Research Track</a></li>
+            <li><a href="ToBeAnnounced.html">ERA Track</a></li>
+            <li><a href="ToBeAnnounced.html">Industry Track</a></li>
+            <li><a href="ToBeAnnounced.html">Tool Demo Track</a></li>
+            <li><a href="ToBeAnnounced.html">Doctoral Symposium</a></li>
            </ul>
         </li>
         <li class="dropdown">
@@ -136,13 +171,9 @@
             <li><a href="Organization Committee.html">Organizing Committee</a></li>
           </ul>
         </li>
-        <li><a href="#">Social Events</a></li>
+        <li><a href="ToBeAnnounced.html">Social Events</a></li>
       </ul>
-        
-      
-    
-    </div><!-- /.navbar-collapse -->
-    
+    </div><!-- /.navbar-collapse -->    
   </div><!-- /.container-fluid -->
   
 </nav>
@@ -160,82 +191,85 @@
 
     <div class="col-md-4" role="main">
 
-      <div class="panel panel-warning">
+      <div class="panel panel-primary">
             <div class="panel-heading">
-              <h3 class="panel-title">Latest news</h3>
+              <h3 class="panel-title">Latest News</h3>
             </div>
-            <div class="panel-body" style="pdding-bottom: 0;height: 100px;overflow-y: scroll;">
+            <div class="panel-body" style="pdding-bottom: 0;height: 100px;padding: 0;">
             </div>
+      </div>
+
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title">Important Dates</h3>
+        </div>
+        <div class="panel-body" style="pdding-bottom: 0;height: 195px;padding: 0 5px;">
+          <div id="date1" style="display: block;">        
+            <h4 style="width:100%; text-align: center;">Research Track</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <div id="date2" style="display: none;">
+            <h4 style="width:100%; text-align: center;">ERA Track</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <div id="date3" style="display: none;">
+            <h4 style="width:100%; text-align: center;">Industry Track</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <div id="date4" style="display: none;">
+            <h4 style="width:100%; text-align: center;">Tool Demo Track</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <div id="date5" style="display: none;">
+            <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <ul class="pager" style="margin: 3px 5px 0 5px;">
+            <li class="previous"><a href="javascript:prevDatePager();">&larr; </a></li>
+            <li class="next"><a href="javascript:nextDatePager();"> &rarr;</a></li>
+          </ul>
+        </div>
       </div>
 
       <div class="panel panel-info">
-            <div class="panel-heading">
-              <h3 class="panel-title">Important dates</h3>
+        <div class="panel-heading">
+          <h3 class="panel-title">Publicity Film</h3>
+        </div>
+        <div class="panel-body" style="pdding-bottom: 0;height: 255px;padding: 0;">
+          <div id="film1" style="display: block;"> 
+            <h5 style="width:100%; text-align: center;margin-bottom:0;">Fudan University</h5>
+            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+            </div>  
+          </div>
+          <div id="film2" style="display: none;">
+            <h5 style="width:100%; text-align: center;margin-bottom:0;">Shanghai, City of Innovation</h5>
+            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
             </div>
-            <div class="panel-body">
-    <div id="1" style="display: block;">        
-  <table class="dates">
-  <thead><tr><th colspan="2"> 1 </th></tr></thead>
-    <tbody>
-    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-  </tbody>
-  </table>
-  </div>
-  <div id="2" style="display: none;">
-  <table class="dates">
-  <thead><tr><th colspan="2"> 2 </th></tr></thead>
-    <tbody>
-    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>    
-  </tbody>    
-  </table>
-    <!--  div class="alert alert-warning" role="alert">Coming soon...</div-->
-  </div>
-  <div id="3" style="display: none;">
-  <table class="dates">
-  <thead><tr><th colspan="2"> 3 </th></tr></thead>
-    <tbody>
-    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>     
-  </tbody>    
-  </table>
-    <!-- div class="alert alert-warning" role="alert">Coming soon...</div-->
-  </div>
-  <div id="4" style="display: none;">
-  <table class="dates">
-  <thead><tr><th colspan="2"> 4 </th></tr></thead>
-    <tbody>
-    <tr><td>  &nbsp;&nbsp;&nbsp;</td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>
-    <tr><td>  </td><td>  </td></tr>     
-  </tbody>    
-  </table>    
-    <!--  div class="alert alert-warning" role="alert">Coming soon...</div-->
-  </div>
-    <ul class="pager" style="margin-top:5px;margin-bottom:0px;">
-    <li class="previous"><a class="pulsante" href="javascript:prevPager();" style="border-radius: 4px;"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a></li>
-    <li class="next"><a class="pulsante" href="javascript:nextPager();" style="border-radius: 4px;"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></li>
-    </ul>
-
-  </div>
-  </div>
-      <h5>Shanghai,the City of Creation</h5>
-      <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
-      </div>
-      
-
-      <h5>Fudan University</h5>
-      <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+          </div>
+          <ul class="pager" style="margin: 3px 5px 0 5px;">
+            <li class="previous"><a href="javascript:prevFilmPager();">&larr; </a></li>
+            <li class="next"><a href="javascript:nextFilmPager();"> &rarr;</a></li>
+          </ul>
+        </div>
       </div>
 	</div>
     
