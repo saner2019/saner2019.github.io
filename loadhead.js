@@ -17,7 +17,7 @@ var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-to
 li_cfp.find('ul').append('<li><a href="ToBeAnnounced.html">Research Track</a></li>');  
 li_cfp.find('ul').append('<li><a href="ToBeAnnounced.html">ERA Track</a></li>');   
 li_cfp.find('ul').append('<li><a href="ToBeAnnounced.html">Industry Track</a></li>');   
-li_cfp.find('ul').append('<li><a href="ToBeAnnounced.html">Tool Demo Track</a></li>');   
+li_cfp.find('ul').append('<li><a href="ToolDemoCFP.html">Tool Demo Track</a></li>');   
 li_cfp.find('ul').append('<li><a href="ToBeAnnounced.html">Doctoral Symposium</a></li>');         
 navbarcollapseul.append(li_cfp);        
           
