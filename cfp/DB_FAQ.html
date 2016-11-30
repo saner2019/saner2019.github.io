@@ -19,11 +19,130 @@
   
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-          <h2>Double-Blind Reviewing FAQ for the Research Track </h2>
+    <div class="col-md-12"  style="text-align:justify;">
+          <h2>Double-Blind Reviewing FAQ </h2>
           <hr>
-          <p style="text-align:justify;">&nbsp &nbsp To be announced soon.</p>
+          <p>&nbsp &nbsp The goal of the double-blind reviewing process is to help members make a judgement about the paper without bias, not to make it impossible for them to discover the authors if they were to try. Nothing should be done for the sake of anonymity that potentially could weaken the submission or makes the job of reviewing the paper more difficult (e.g., important background references should not be omitted or anonymized). In addition, authors should feel free to share their ideas or draft versions of their paper as they normally would. For instance, authors may post drafts of their papers on the web or post talks about their research ideas. </p>
+          <p>&nbsp &nbsp The following FAQ is adapted from the double-blind reviewing FAQs <a href="http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq.html">by David Walker for POPL 2015</a> and <a href="http://icsme2016.github.io/cfp/dbr-faq.html">by Felienne Hermans and Jens Knodel for the ICSME 2016 Industry Track</a>.</p>
+
+          <h3>FAQ</h3>
+          <b>GENERAL</b>
+          <ul>
+            <li><a href="#g1">Why are you using double-blind reviewing?</a></li>
+            <li><a href="#g2">Do you really think blinding actually works? I suspect reviewers can often guess who the authors are anyway.</a></li>
+            <li><a href="#g3">Couldn't blind submission create an injustice where a paper is inappropriately rejected based upon supposedly-prior work which was actually by the same authors and not previously published?</a></li>
+          </ul>
           
+          <b>FOR AUTHORS</b>
+          <ul>
+            <li><a href="#a1">What exactly do I have to do to anonymize my paper?</a></li>
+            <li><a href="#a2">Is there a way for me to submit anonymous supplemental material which could be considered by a reviewer before she submits her review (rather than potentially non-anonymous material that can only be viewed afterward)?</a></li>
+            <li><a href="#a3">Can I supplement my submission using a URL that links to auxiliary materials instead of submitting such materials to the EasyChair system directly?</a></li>
+            <li><a href="#a4">I am building on my own past work on the WizWoz system. Do I need to rename this system in my paper for purposes of anonymity, so as to remove the implied connection between my authorship of past work on this system and my present submission?</a></li>
+            <li><a href="#a5">I am submitting a paper that extends my own work that previously appeared at a workshop. Should I anonymize any reference to that prior work?</a></li>
+            <li><a href="#a6">Am I allowed to post my (non-blinded) paper on my web page? Can I advertise the unblinded version of my paper on mailing lists or send it to colleagues? May I give a talk about my work while it is under review?</a></li>
+            <li><a href="#a7">Will the fact that the track is double-blind have an impact on handling conflicts-of interest? When I am asked by the submission system to identify conflicts of interest, what criteria should I use?</a></li>
+          </ul>
+
+          <b>FOR REVIEWERS</b>
+          <ul>
+            <li><a href="#r1">What should I do if I if I learn the authors' identity? What should I do if a prospective author contacts me and asks to visit my institution?</a></li>
+            <li><a href="#r2">The authors have provided a URL to supplemental material. I would like to see the material but I worry they will snoop my IP address and learn my identity. What should I do?</a></li>
+            <li><a href="#r3">How do we handle potential conflicts of interest since I cannot see the author names?</a></li>
+            <li><a href="#r4">Are PC members allowed to submit papers? If so, how are they handled?</a></li>
+          </ul>
+
+          <b>FOR ADDITIONAL INFORMATION</b>
+          <ul>
+            <li>Please review <a href="#ai">evidence about bias in merit reviewing</a> for more information.</li>
+          </ul> 
+          
+          <hr>
+
+          <h3>General</h3>
+          <a name="g1"></a>
+          <p><b style="font-size:20px;">Q:</b> Why are you using double-blind reviewing? </p>
+          <p><b>A:</b> Our goal is to give each a reviewer an unbiased "first look" at each paper. Studies have shown that a reviewer's attitude toward a submission may be affected, even unconsciously, by the identity of the author (see links at <a href="http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq.html#studies">http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq.html#studies</a> more details). We want reviewers to be able to approach each submission without such involuntary reactions as "Barnaby; he writes a good paper" or "Who are these people? I have never heard of them." For this reason, we ask that authors to omit their names from their submissions, and that they avoid revealing their identity through citation. Note that many systems and security conferences use double-blind reviewing and have done so for years (e.g., SIGCOMM, OSDI, IEEE Security and Privacy, SIGMOD). POPL and PLDI have done it for the last several years.</p> 
+          <p>&nbsp &nbsp A key principle to keep in mind is that we intend this process to be cooperative, not adversarial. If a reviewer does discover an author's identity though a subtle clue or oversight the author will not be penalized.</p>
+          <p>&nbsp &nbsp For those wanting more information, see the list of studies about gender bias in other fields and links to CS-related articles that cover this and other forms of bias at <a href="http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq">http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq.html#studies.</a> </p>
+
+          <a name="g2"></a>
+          <p><b style="font-size:20px;">Q:</b> Do you really think blinding actually works? I suspect reviewers can often guess who the authors are anyway.</p>
+          <p><b>A:</b> Studies of blinding with the flavor we are using show that author identities remain unknown 53% to 79% of the time (see <a href="http://www.cs.utexas.edu/users/mckinley/notes/snodgrass-sigmod-2006.pdf">Snodgrass</a> for details). Moreover, about 5-10% of the time (again, see <a href="http://www.cs.utexas.edu/users/mckinley/notes/snodgrass-sigmod-2006.pdf">Snodgrass</a>), a reviewer is certain of the authors, but then turns out to be at least partially mistaken. So, while sometimes authorship can be guessed correctly, the question is, is imperfect blinding better than no blinding at all? If author names are not explicitly in front of the reviewer on the front page, does that help at all even for the remaining submissions where it would be possible to guess? Our conjecture is that on balance the answer is "yes". </p>
+
+          <a name="g3"></a>
+          <p><b style="font-size:20px;">Q:</b> Couldn't blind submission create an injustice where a paper is inappropriately rejected based upon supposedly-prior work which was actually by the same authors and not previously published?</p>
+          <p><b>A:</b> We have heard of this happening, and this is indeed a serious issue. In the approach we are taking for ICSME, author names are revealed to reviewers after they have submitted their review. Therefore, a reviewer can correct their review if they indeed have penalized the authors inappropriately. Unblinding prior to the PC meeting also avoids abuses in which committee members end up advancing the cause of a paper with which they have a conflict.</p>
+
+          <hr>
+
+          <h3>For Authors</h3>
+          <a name="a1"></a>
+          <p><b style="font-size:20px;">Q:</b> What exactly do I have to do to anonymize my paper? </p>
+          <p><b>A:</b> Your job is not to make your identity undiscoverable but simply to make it possible for our reviewers to evaluate your submission without having to know who you are. The specific guidelines stated in the call for papers are simple: omit authors' names from your title page (or list them as "omitted for submission"), and when you cite your own work, refer to it in the third person. For example, if your name is Smith and you have worked on amphibious type systems, instead of saying "We extend our earlier work on statically typed toads (Smith 2004)," you might say "We extend Smith's (2004) earlier work on statically typed toads." Also, be sure not to include any acknowledgements that would give away your identity. If you have any questions, feel free to ask the Track Co-Chairs. </p>
+
+          <a name="a2"></a>
+          <p><b style="font-size:20px;">Q:</b> Is there a way for me to submit anonymous supplemental material which could be considered by a reviewer before she submits her review (rather than potentially non-anonymous material that can only be viewed afterward)? </p>
+          <p><b>A:</b> There is no official channel for doing this: the submission site only accepts potentially non-anonymous material. That said, authors have been known to release a TR, code, etc. via an anonymous hosting service, and to include a URL to that material in the paper. However, we discourage authors from using such tactics except for materials that cannot, for some reason, be uploaded to the official site (e.g., a live demo). We emphasize that authors should strive to make their paper as convincing as possible within the submission page limit, in case reviewers choose not to access supplemental material. Also, see the next question. </p>
+
+          <a name="a3"></a>
+          <p><b style="font-size:20px;">Q:</b> Can I supplement my submission using a URL that links to auxiliary materials instead of submitting such materials to the EasyChair system directly?</p>
+          <p><b>A:</b> In general, we discourage authors from providing supplementary materials via links to external web sites. It is possible to change the linked items after the submission deadline has passed, and, to be fair to all authors, we would like to be sure reviewers evaluate materials that have been completed prior to the submission deadline. Having said that, it is appropriate to link to items, such as an online demo, that can't easily be submitted. Needless to say, attempting to discover the reviewers for your paper by tracking visitors to such a demo site would be a breach of academic integrity. Supplementary items such as PDFs should always be uploaded to EasyChair.</p>
+
+          <a name="a4"></a>
+          <p><b style="font-size:20px;">Q:</b> I am building on my own past work on the WizWoz system. Do I need to rename this system in my paper for purposes of anonymity, so as to remove the implied connection between my authorship of past work on this system and my present submission?</p>
+          <p><b>A:</b> No. The relationship between systems and authors changes over time, so there will be at least some doubt about authorship. Increasing this doubt by changing the system name would help with anonymity, but it would compromise the research process. In particular, changing the name requires explaining a lot about the system again because you can't just refer to the existing papers, which use the proper name. Not citing these papers runs the risk of the reviewers who know about the existing system thinking you are replicating earlier work. It is also confusing for the reviewers to read about the paper under Name X and then have the name be changed to Name Y. Will all the reviewers go and re-read the final version with the correct name? If not, they have the wrong name in their heads, which could be harmful in the long run. </p>
+
+          <a name="a5"></a>
+          <p><b style="font-size:20px;">Q:</b> I am submitting a paper that extends my own work that previously appeared at a workshop. Should I anonymize any reference to that prior work? </p>
+          <p><b>A:</b> No. But we recommend you do not use the same title for your ICSME submission, so that it is clearly distinguished from the prior paper. In general there is rarely a good reason to anonymize a citation. One possibility is for work that is tightly related to the present submission and is also under review. But such works may often be non-anonymous. When in doubt, contact the Track Co-Chairs. </p>
+
+          <a name="a6"></a>
+          <p><b style="font-size:20px;">Q:</b> Am I allowed to post my (non-blinded) paper on my web page? Can I advertise the unblinded version of my paper on mailing lists or send it to colleagues? May I give a talk about my work while it is under review? </p>
+          <p><b>A:</b> As far as the authors' publicity actions are concerned, a paper under double-blind review is largely the same as a paper under regular (single-blind) review. Double-blind reviewing should not hinder the usual communication of results. </p>
+          <p>&nbsp &nbsp That said, we do ask that you not attempt to deliberately subvert the double-blind reviewing process by announcing the names of the authors of your paper to the potential reviewers of your paper. It is difficult to define exactly what counts as "subversion" here, but a blatant example might include sending individual e-mail to members of the Program Committee about your work (unless they are conflicted out anyway). On the other hand, it is perfectly fine, for example, to visit other institutions and give talks about your work, to present your submitted work during job interviews, to present your work at professional meetings (e.g., Dagstuhl or Shonan), or to post your work on your web page. In general, PC members will not be asked to recuse themselves if they discover the (likely) identity of an author through such means. If you're not sure about what constitutes "subversion", please consult directly with the Track Co-Chairs. </p>
+
+          <a name="a7"></a>
+          <p><b style="font-size:20px;">Q:</b> Will the fact that the track is double-blind have an impact on handling conflicts-of interest? When I am asked by the submission system to identify conflicts of interest, what criteria should I use?</p>
+          <p><b>A:</b> Using DBR does not change the principle that reviewers should not review papers with which they have a conflict of interest, even if they do not immediately know who the authors are. As an author, you should list PC members (and any others, since others may be asked for outside reviewers) whom you believe have a conflict with you. While particular criteria for making this determination may vary, please apply the <a href="http://www.sigsoft.org/policies/pgmcommittee.html#con_int">ACM SIGSOFT guidelines on conflicts of interest</a>, identifying a potential reviewer Bob as conflicted if:</p>
+          <ul>
+            <li>Bob is/was an advisor or advisee of yours. Note that this conflict never expires.</li>
+            <li>Bob was affiliated with the same institution within the past 3 years, including anywhere in your organization or parent company. Note that this includes your previous affiliations if you have changed jobs within the past 3 years, and your future institutions if you are in the process of changing jobs.</li>
+            <li>Bob was your co-author, pending co-author, or submitted co-author of a publication within the past 3 years, in any technical area, including patents and technical reports.</li>
+            <li>Bob has a non-trivial financial stake in your work (e.g., invested in your startup company).</li>
+            <li>Bob has or had had a financial relationship with you (e.g., grants, contracts, consultancies, equity investments, stock options, etc.) within the past 3 years.</li>
+            <li>Bob’s personal goals would be furthered by acceptance or rejection (e.g., a competitor).</li>
+            <li>Bob is a family member or close friend.</li>
+            <li>Bob is you.</li>
+          </ul>
+          <p>&nbsp &nbsp Also please identify institutions with which you are affiliated; all employees or affiliates of these institutions will also be considered conflicted. </p>
+          <p>&nbsp &nbsp If a possible reviewer does not meet the above criteria, please do not identify them as conflicted. Doing so could be viewed as an attempt to prevent a qualified, but possibly skeptical reviewer from reviewing your paper. If you nevertheless believe that a reviewer who does not meet the above criteria is conflicted, you may identify the person and send a note to the Track Co-Chairs.</p>
+
+          <hr>
+
+          <h3>For Reviewers</h3>
+          <a name="r1"></a>
+          <p><b style="font-size:20px;">Q:</b> What should I do if I if I learn the authors' identity? What should I do if a prospective author contacts me and asks to visit my institution? </p>
+          <p><b>A:</b> If at any point you feel that the authors' actions are largely aimed at ensuring that potential reviewers know their identity, you should contact the Track Co-Chairs. Otherwise you should not treat double-blind reviewing differently from regular blind reviewing. In particular, you should refrain from seeking out information on the authors' identity, but if you discover it accidentally this will not automatically disqualify you as a reviewer. Use your best judgment. </p>
+
+          <a name="r2"></a>
+          <p><b style="font-size:20px;">Q:</b> The authors have provided a URL to supplemental material. I would like to see the material but I worry they will snoop my IP address and learn my identity. What should I do? </p>
+          <p><b>A:</b> Contact the Track Co-Chairs, who will download the material on your behalf and make it available to you. </p>
+
+          <a name="r3"></a>
+          <p><b style="font-size:20px;">Q:</b> How do we handle potential conflicts of interest since I cannot see the author names? </p>
+          <p><b>A:</b> The conference review system will ask that you identify conflicts of interest when you get an account on the submission system. Please see the related question applied to authors to decide how to identify conflicts. Feel free to also identify additional authors whose papers you feel you could not review fairly for reasons other than those given (e.g., strong personal friendship). </p>
+
+          <a name="r4"></a>
+          <p><b style="font-size:20px;">Q:</b> Are PC members allowed to submit papers? If so, how are they handled?  </p>
+          <p><b>A:</b> PC members are allowed to submit papers, which will be treated the same as other submitted papers. </p>
+
+          <hr>
+
+          <h3>Additional Information about Bias in Merit Reviewing</h3>
+          <a name="ai"></a>
+          <p>Please see the <a href="http://www.cs.princeton.edu/~dpw/popl/15/dbr-faq.html#studies">corresponding section</a> of David Walker's FAQ for more information about bias in merit reviewing.</p>
+
           <br>
           <hr>
     </div>
