@@ -17,6 +17,7 @@
   <script src="jquery/1.11.1/jquery.min.js"></script>
   <script src="bootstrap/3.3.0/js/bootstrap.min.js"></script>
   <script src="bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+  <script src="bootstrap/3.3.0/css/bootstrap.min.css"></script>
   <script>
       var datepager = 0;
       function callDatePager(i) {
@@ -146,12 +147,17 @@
 
     <div class="col-md-4" role="main">
 
+      <br>
       <div class="panel panel-primary">
             <div class="panel-heading">
               <h3 class="panel-title">Latest News</h3>
             </div>
-            <div class="panel-body" style="pdding-bottom: 0;height: 200px;padding: 15px;">
+            <div class="panel-body" style="pdding-bottom: 0;height: 263px;padding: 15px;">
               <table>
+                 <tr>
+                  <td class="newsdatecol">2016-12-1</td>
+                  <td class="newscontentcol"><a href="ToBeAnnounced.html">NIER Track CFP</a> is available!</td>
+                </tr>
                 <tr>
                   <td class="newsdatecol">2016-11-28</td>
                   <td class="newscontentcol"><a href="cfp/ResearchTrackCFP.html">Research Track CFP</a> is available!</td>
@@ -160,6 +166,7 @@
                   <td class="newsdatecol">2016-10-18</td>
                   <td class="newscontentcol"><a href="cfp/ToolDemoCFP.html">Tool Demo Track CFP</a> is available!</td>
                 </tr>
+               
               </table>
             </div>
       </div>
@@ -168,7 +175,7 @@
         <div class="panel-heading">
           <h3 class="panel-title">Important Dates</h3>
         </div>
-        <div class="panel-body" style="pdding-bottom: 0;height: 195px;padding: 0 15px;">
+        <div class="panel-body" style="pdding-bottom: 0;height: 228px;padding: 0 15px;">
           <div id="date1" style="display: block;">        
             <h4 style="width:100%; text-align: center;">Research Track</h4>
             <p>Abstract Submission:<span style="float:right;">Thursday, March 30, 2017</span></p>
@@ -177,11 +184,11 @@
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
           </div>
           <div id="date2" style="display: none;">
-            <h4 style="width:100%; text-align: center;">ERA Track</h4>
-            <p>Abstract Submission:</p>
-            <p>Paper Submission:</p>
-            <p>Author Notification:</p>
-            <p>Camera Ready:</p>
+            <h4 style="width:100%; text-align: center;">NIER Track</h4>
+            <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+            <p>Paper Submission:<span style="float:right;">June 26, 2017</span></p>
+            <p>Author Notification:<span style="float:right;">July 21, 2017</span></p></p>
+            <p>Camera Ready:<span style="float:right;">TBD</span></p>
           </div>
           <div id="date3" style="display: none;">
             <h4 style="width:100%; text-align: center;">Industry Track</h4>
@@ -204,40 +211,15 @@
             <p>Author Notification:</p>
             <p>Camera Ready:</p>
           </div>
+          <br>
           <ul class="pager" style="margin: 3px 5px 0 5px;">
-            <li class="previous"><a href="javascript:prevDatePager();">&larr; </a></li>
-            <li class="next"><a href="javascript:nextDatePager();"> &rarr;</a></li>
+            <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a></li>
+            <li class="next"><a href="javascript:nextDatePager();">&raquo;</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Publicity Film</h3>
-        </div>
-        <div class="panel-body" style="pdding-bottom: 0;height: 255px;padding: 0;">
-          <div id="film1" style="display: block;"> 
-            <h5 style="width:100%; text-align: center;margin-bottom:0;">Fudan University</h5>
-            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
-            </div>  
-          </div>
-          <div id="film2" style="display: none;">
-            <h5 style="width:100%; text-align: center;margin-bottom:0;">Shanghai, City of Innovation</h5>
-            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
-            </div>
-          </div>
-          <ul class="pager" style="margin: 3px 5px 0 5px;">
-            <li class="previous"><a href="javascript:prevFilmPager();">&larr; </a></li>
-            <li class="next"><a href="javascript:nextFilmPager();"> &rarr;</a></li>
-          </ul>
-        </div>
-      </div>
-	</div>
-    
+ </div>    
     <div class="col-md-8">
       <h2>Welcome</h2> 
       <hr>
@@ -246,8 +228,48 @@
       </p>
       <p style="font-size:16px; text-indent:2em; text-align:justify;">
         As one of the largest cities in Asia, Shanghai has rich cultural relics. You can not only experience a modern trip including the Bund, Xintiandi, the Oriental Pearl TV Tower and World Financial Center, but also explore an old and ancient journey by visiting the Yuyuan Garden, Jade Buddha Temple and Zhujiajiao Ancient Town. Nearby Suzhou and Hangzhou, you can easily visit some ancient water towns in Jiangsu and Zhejiang Provinces from Shanghai. （more detailed Shanghai travel guide can be found at <a href="http://www.chinatravel.com/shanghai-travel/">http://www.chinatravel.com/shanghai-travel/</a>）
-      </p>  
+      </p> 
+      <hr>  
     </div>
+    
+
+    
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Shanghai,City of Innovation</h3>
+        </div>
+        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+          <div id="film1" style="display: block;"> 
+            
+            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Fudan University</h3>
+        </div>
+        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+          <div id="film1" style="display: block;"> 
+            
+            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+            <div class="embed-responsive embed-responsive-16by9">
+              <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+            </div>  
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <hr style="height:5px;">
