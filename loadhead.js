@@ -12,7 +12,7 @@ if (level==1) {
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
 	var IndustryTrackCPF = "ToBeAnnounced.html";
 	var ToolDemoTrackCFP = "cfp/ToolDemoCFP.html";
-	var DoctoralCFP = "ToBeAnnounced.html";
+	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 
 	var venueurl = "venue.html";
 	var orgcommitteeurl = "Organization Committee.html";
@@ -27,7 +27,7 @@ else {
 	var ERATrackCFP = "NIERTrackCFP.html";
 	var IndustryTrackCPF = "../ToBeAnnounced.html";
 	var ToolDemoTrackCFP = "ToolDemoCFP.html";
-	var DoctoralCFP = "../ToBeAnnounced.html";
+	var DoctoralCFP = "DoctoralSymposiumCFP.html";
 
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../Organization Committee.html";
