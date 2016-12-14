@@ -57,6 +57,7 @@ navbarcollapseul.append(li_cfp);
           
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
 li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/">SCAM</a></li>');
+li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl">VISSOFT</a></li>');
 navbarcollapseul.append(li_coevents); 
 
 var li_sevents = $('<li><a href="'+Socialurl+'">Social Events</a></li>');  
