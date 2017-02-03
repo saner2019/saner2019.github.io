@@ -10,9 +10,10 @@ if (level==1) {
 
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
-	var IndustryTrackCPF = "ToBeAnnounced.html";
+	var IndustryTrackCPF = "cfp/IndustryTrackCFP.html";
 	var ToolDemoTrackCFP = "cfp/ToolDemoCFP.html";
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
+	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 
 	var venueurl = "venue.html";
 	var orgcommitteeurl = "Organization Committee.html";
@@ -26,9 +27,10 @@ else {
 
 	var ResearchTrackCFP = "ResearchTrackCFP.html";
 	var ERATrackCFP = "NIERTrackCFP.html";
-	var IndustryTrackCPF = "../ToBeAnnounced.html";
+	var IndustryTrackCPF = "IndustryTrackCFP.html";
 	var ToolDemoTrackCFP = "ToolDemoCFP.html";
 	var DoctoralCFP = "DoctoralSymposiumCFP.html";
+	var ArtifactsTrackCFP="ArtifactsTrackCFP.html";
 
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../Organization Committee.html";
@@ -54,7 +56,8 @@ li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a><
 li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');   
 li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');   
 li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');   
-li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');         
+li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>'); 
+li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');        
 navbarcollapseul.append(li_cfp);        
           
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
