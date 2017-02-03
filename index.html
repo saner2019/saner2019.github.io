@@ -27,12 +27,14 @@
           $("#date3").hide(); 
           $("#date4").hide(); 
           $("#date5").hide(); 
+          $("#date6").hide(); 
         } else if(i==1) {
           $("#date1").hide(); 
           $("#date2").show(); 
           $("#date3").hide(); 
           $("#date4").hide(); 
           $("#date5").hide(); 
+          $("#date6").hide(); 
         } else if(i==2) {
           $("#date1").hide(); 
           $("#date2").hide(); 
@@ -40,36 +42,47 @@
           $("#date4").hide(); 
           $("#date4").hide(); 
           $("#date5").hide();
+          $("#date6").hide(); 
         } else if(i==3) {
           $("#date1").hide(); 
           $("#date2").hide(); 
           $("#date3").hide(); 
           $("#date4").show(); 
           $("#date5").hide();
+          $("#date6").hide(); 
         } else if(i==4) {
           $("#date1").hide(); 
           $("#date2").hide(); 
           $("#date3").hide(); 
           $("#date4").hide(); 
           $("#date5").show();
+          $("#date6").hide(); 
+        } else if(i==5) {
+          $("#date1").hide(); 
+          $("#date2").hide(); 
+          $("#date3").hide(); 
+          $("#date4").hide(); 
+          $("#date5").hide();
+          $("#date6").show(); 
         } else {
           $("#date1").hide(); 
           $("#date2").hide(); 
           $("#date3").hide(); 
           $("#date4").hide();
-          $("#date5").hide();            
+          $("#date5").hide(); 
+          $("#date6").hide();            
         }  
       }
     
       function nextDatePager() {
         datepager = datepager + 1;
-        if(datepager == 5) datepager = 0;
+        if(datepager == 6) datepager = 0;
         callDatePager(datepager);
       }
     
       function prevDatePager() {
         datepager = datepager - 1;
-        if(datepager == -1) datepager = 4;
+        if(datepager == -1) datepager = 5;
         callDatePager(datepager);
       }  
 
@@ -204,10 +217,10 @@
           </div>
           <div id="date3" style="display: none;">
             <h4 style="width:100%; text-align: center;">Industry Track</h4>
-            <p>Abstract Submission:</p>
-            <p>Paper Submission:</p>
-            <p>Author Notification:</p>
-            <p>Camera Ready:</p>
+            <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+            <p>Paper Submission:<span style="float:right;">June 29, 2017</span></p>
+            <p>Author Notification:<span style="float:right;">July 21, 2017</span></p>
+            <p>Camera Ready:<span style="float:right;">August 3, 2017</span></p>
           </div>
           <div id="date4" style="display: none;">
             <h4 style="width:100%; text-align: center;">Tool Demo Track (Tentative)</h4>
@@ -217,6 +230,13 @@
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
           </div>
           <div id="date5" style="display: none;">
+            <h4 style="width:100%; text-align: center;">Artifacts Track</h4>
+            <p>Abstract Submission:</p>
+            <p>Paper Submission:</p>
+            <p>Author Notification:</p>
+            <p>Camera Ready:</p>
+          </div>
+          <div id="date6" style="display: none;">
             <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
             <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
             <p>Paper Submission:<span style="float:right;">June 26, 2017</span></p>
