@@ -1,334 +1,670 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <title>ICSME 2017</title>
+
   <link rel="stylesheet" href="bootstrap/3.3.0/css/bootstrap.min.css">
+
   <style>
+
     .newsdatecol {
+
       width: 22%;
+
       top: 0;
+
       font-weight:bold;
+
     }
+
     .newscontentcol {
+
       width: 75%;
+
       padding-left:8px;
+
     }
+
   </style>
+
   <script src="jquery/1.11.1/jquery.min.js"></script>
+
   <script src="bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
   <script src="bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+
   <script src="bootstrap/3.3.0/css/bootstrap.min.css"></script>
+
   <script>
+
       var datepager = 0;
+
       function callDatePager(i) {
+
         if(i==0) {
+
           $("#date1").show(); 
+
           $("#date2").hide(); 
+
           $("#date3").hide(); 
+
           $("#date4").hide(); 
+
           $("#date5").hide(); 
+
           $("#date6").hide(); 
+
         } else if(i==1) {
+
           $("#date1").hide(); 
+
           $("#date2").show(); 
+
           $("#date3").hide(); 
+
           $("#date4").hide(); 
+
           $("#date5").hide(); 
+
           $("#date6").hide(); 
+
         } else if(i==2) {
+
           $("#date1").hide(); 
+
           $("#date2").hide(); 
+
           $("#date3").show(); 
+
           $("#date4").hide(); 
+
           $("#date4").hide(); 
+
           $("#date5").hide();
+
           $("#date6").hide(); 
+
         } else if(i==3) {
+
           $("#date1").hide(); 
+
           $("#date2").hide(); 
+
           $("#date3").hide(); 
+
           $("#date4").show(); 
+
           $("#date5").hide();
+
           $("#date6").hide(); 
+
         } else if(i==4) {
+
           $("#date1").hide(); 
+
           $("#date2").hide(); 
+
           $("#date3").hide(); 
+
           $("#date4").hide(); 
+
           $("#date5").show();
+
           $("#date6").hide(); 
+
         } else if(i==5) {
+
           $("#date1").hide(); 
+
           $("#date2").hide(); 
+
           $("#date3").hide(); 
+
           $("#date4").hide(); 
+
           $("#date5").hide();
+
           $("#date6").show(); 
+
         } else {
+
           $("#date1").hide(); 
+
           $("#date2").hide(); 
+
           $("#date3").hide(); 
+
           $("#date4").hide();
+
           $("#date5").hide(); 
+
           $("#date6").hide();            
+
         }  
+
       }
+
     
+
       function nextDatePager() {
+
         datepager = datepager + 1;
+
         if(datepager == 6) datepager = 0;
+
         callDatePager(datepager);
+
       }
+
     
+
       function prevDatePager() {
+
         datepager = datepager - 1;
+
         if(datepager == -1) datepager = 5;
+
         callDatePager(datepager);
+
       }  
+
+
 
       var filmpager = 0;
+
       function callFilmPager(i) {
+
        if(i==0) {
+
           $("#film1").show(); 
+
           $("#film2").hide();  
+
         } else if(i==1) {
+
           $("#film1").hide(); 
+
           $("#film2").show();  
+
         } else {
+
           $("#film1").hide(); 
+
           $("#film2").hide();             
+
         }  
+
       }
+
     
+
       function nextFilmPager() {
+
         filmpager = filmpager + 1;
+
         if(filmpager == 2) filmpager = 0;
+
         callFilmPager(filmpager);
+
       }
+
     
+
       function prevFilmPager() {
+
         filmpager = filmpager - 1;
+
         if(filmpager == -1) filmpager = 1;
+
         callFilmPager(filmpager);
+
       }  
+
       
+
       function setAnimation(id, effect) {
+
         $("#"+id).removeClass().addClass(effect +' animated').
+
         one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
         });
+
         
+
       }
+
       
+
       
+
     $(document).ready(function(){ 
 
+
+
     $('.pager .pulsante').click(function(e) {
+
           $(this).blur();
+
     });     
+
       
+
     callDatePager(datepager);
+
     callFilmPager(filmpager);  
+
     
+
     /*
+
     $("#mainTitle").click(function() {
+
       setAnimation("mainTitle", "hinge");
+
       setTimeout('setAnimation("mainTitle","bounceInRight");',3000);
+
     });
+
     
+
     $("#subTitle").click(function() {
+
       setAnimation("subTitle", "hinge");
+
       setTimeout('setAnimation("subTitle","bounceInLeft");',3000);
+
     });   
+
     */
+
     }); 
+
     </script>
+
 </head>
+
 <body>
+
   <script src="loadhead.js"></script>
+
   <script>loadheaderexecute(1);</script>
+
+
 
 <div class="container"> 
 
+
+
   <img src="ICSME/001.jpg" class="img-responsive" alt="Responsive image">
-  <br>
+
   <br>
 
+  <br>
+
+
+
   <div class="row">
+
     <div class="col-xs-12">
+
 	<div class="row">
+
 		
+
+
 
     <div class="col-md-4" role="main">
 
+
+
       <br>
+
       <div class="panel panel-primary">
+
             <div class="panel-heading">
+
               <h3 class="panel-title">Latest News</h3>
+
             </div>
+
             <div class="panel-body" style="pdding-bottom: 0;height: 263px;padding: 15px;">
+
               <table>  
+
                 <tr>
+
                   <td class="newsdatecol">2017-2-3</td>
+
                   <td class="newscontentcol"><a href="cfp/ArtifactsTrackCFP.html">Artifacts Track CFP</a> is available!</td>
+
                 </tr>               
+
                 <tr>
+
                   <td class="newsdatecol">2017-2-3</td>
+
                   <td class="newscontentcol"><a href="cfp/IndustryTrackCFP.html">Industry Track CFP</a> is available!</td>
+
                 </tr>
+
                  <tr>
+
                   <td class="newsdatecol">2016-12-7</td>
+
                   <td class="newscontentcol"><a href="cfp/DoctoralSymposiumCFP.html">Doctoral Symposium CFP</a> is available!</td>
+
                 </tr>
+
                  <tr>
+
                   <td class="newsdatecol">2016-12-1</td>
+
                   <td class="newscontentcol"><a href="cfp/NIERTrackCFP.html">NIER Track CFP</a> is available!</td>
+
                 </tr>
+
                 <tr>
+
                   <td class="newsdatecol">2016-11-28</td>
+
                   <td class="newscontentcol"><a href="cfp/ResearchTrackCFP.html">Research Track CFP</a> is available!</td>
+
                 </tr>
+
                 <tr>
+
                   <td class="newsdatecol">2016-10-18</td>
+
                   <td class="newscontentcol"><a href="cfp/ToolDemoCFP.html">Tool Demo Track CFP</a> is available!</td>
+
                 </tr>
+
                 
+
               </table>
+
             </div>
+
       </div>
+
+
 
       <div class="panel panel-danger">
+
         <div class="panel-heading">
+
           <h3 class="panel-title">Important Dates</h3>
+
         </div>
+
         <div class="panel-body" style="pdding-bottom: 0;height: 228px;padding: 0 15px;">
+
           <div id="date1" style="display: block;">        
+
             <h4 style="width:100%; text-align: center;">Research Track</h4>
+
             <p>Abstract Submission:<span style="float:right;">Thursday, March 30, 2017</span></p>
+
             <p>Paper Submission:<span style="float:right;">Thursday, April 6, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;"> Monday, June 12, 2017</span></p>
+
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
+
           </div>
+
           <div id="date2" style="display: none;">
+
             <h4 style="width:100%; text-align: center;">NIER Track</h4>
+
             <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+
             <p>Paper Submission:<span style="float:right;">June 26, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;">July 21, 2017</span></p></p>
+
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
+
           </div>
+
           <div id="date3" style="display: none;">
+
             <h4 style="width:100%; text-align: center;">Industry Track</h4>
+
             <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+
             <p>Paper Submission:<span style="float:right;">June 29, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;">July 21, 2017</span></p>
+
             <p>Camera Ready:<span style="float:right;">August 3, 2017</span></p>
+
           </div>
+
           <div id="date4" style="display: none;">
+
             <h4 style="width:100%; text-align: center;">Tool Demo Track (Tentative)</h4>
+
             <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+
             <p>Paper Submission:<span style="float:right;">June 26, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;">July 21, 2017</span></p>
+
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
+
           </div>
+
           <div id="date5" style="display: none;">
+
             <h4 style="width:100%; text-align: center;">Artifacts Track</h4>
+
             <p>Paper Submission:<span style="float:right;">Monday, June 26, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;">Friday, July 21, 2017</span></p>
+
             <p>Camera Ready:<span style="float:right;">Thursday, August 3, 2017</span></p>
+
           </div>
+
           <div id="date6" style="display: none;">
+
             <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
+
             <p>Abstract Submission:<span style="float:right;">June 19, 2017</span></p>
+
             <p>Paper Submission:<span style="float:right;">June 26, 2017</span></p>
+
             <p>Author Notification:<span style="float:right;">July 21, 2017</span></p>
+
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
+
           </div>
+
           <br>
+
           <ul class="pager" style="margin: 3px 5px 0 5px;">
+
             <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a></li>
+
             <li class="next"><a href="javascript:nextDatePager();">&raquo;</a></li>
+
           </ul>
+
         </div>
+
       </div>
+
+
 
  </div>    
+
     <div class="col-md-8">
+
       <h2>Welcome</h2> 
+
       <hr>
       <p style="font-size:16px; text-indent:2em; text-align:justify;">
-        ICSME 2017, the 33rd in the conference series, will be held in Shanghai, China. Shanghai is the largest and most prosperous city in China. World Expo 2010 was held in Shanghai. Shanghai is situated in the Yangtze River delta next to the East China Sea.
+        <strong>The International Conference on Software Maintenance and Evolution (ICSME)</strong> is the premier international forum for researchers and practitioners from academia, industry, and government to present, discuss, and debate the most recent ideas, experiences, and challenges in software maintenance and evolution.
       </p>
+
       <p style="font-size:16px; text-indent:2em; text-align:justify;">
+
+        ICSME 2017, the 33rd in the conference series, will be held in Shanghai, China. Shanghai is the largest and most prosperous city in China. World Expo 2010 was held in Shanghai. Shanghai is situated in the Yangtze River delta next to the East China Sea.
+
+      </p>
+
+      <p style="font-size:16px; text-indent:2em; text-align:justify;">
+
         As one of the largest cities in Asia, Shanghai has rich cultural relics. You can not only experience a modern trip including the Bund, Xintiandi, the Oriental Pearl TV Tower and World Financial Center, but also explore an old and ancient journey by visiting the Yuyuan Garden, Jade Buddha Temple and Zhujiajiao Ancient Town. Nearby Suzhou and Hangzhou, you can easily visit some ancient water towns in Jiangsu and Zhejiang Provinces from Shanghai. （more detailed Shanghai travel guide can be found at <a href="http://www.chinatravel.com/shanghai-travel/">http://www.chinatravel.com/shanghai-travel/</a>）
+
       </p> 
+
       <hr>  
+
     </div>
-    
 
     
+
+
+
+    
+
     <div class="col-md-4">
+
       <div class="panel panel-info">
+
         <div class="panel-heading">
+
           <h3 class="panel-title">Shanghai,City of Innovation</h3>
+
         </div>
+
         <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+
           <div id="film1" style="display: block;"> 
+
             
+
             <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+
             <div class="embed-responsive embed-responsive-16by9">
+
               <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
+
             </div>  
+
           </div>
+
           
+
         </div>
+
       </div>
+
     </div>
 
+
+
     <div class="col-md-4">
+
       <div class="panel panel-info">
+
         <div class="panel-heading">
+
           <h3 class="panel-title">Fudan University</h3>
+
         </div>
+
         <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+
           <div id="film1" style="display: block;"> 
+
             
+
             <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
+
             <div class="embed-responsive embed-responsive-16by9">
+
               <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+
             </div>  
+
           </div>
+
           
+
         </div>
+
       </div>
+
     </div>
+
+
 
   </div>
+
+
 
   <hr style="height:5px;">
 
+
+
   <footer class="icsme2017" role="contentinfo" >
+
   <div class="container">
+
     <div class="row">
+
       <p class="lead text-center">Sponsors</p>
+
     </div>
+
     <div class="row">
+
       <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
+
         <a style="border:0;" href="http://www.computer.org" class="thumbnail"><img src="ICSME/ieee-cs.jpg" alt="IEEE Computer Society"></a>
+
       </div>
+
       <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+
         <a style="border:0;" href="http://www.computer.org/portal/web/tcse/home" class="thumbnail"><img src="ICSME/ieee-tcse.jpg" alt="IEEE Technical Council on Software Engineering"></a>
+
       </div>
+
     </div>
+
       
+
     <div class="row">
+
       <p class="lead text-center">Patrons</p>
+
     </div>
+
     <div class="row">
+
       <div class="col-xs-12">
+
         <a style="border:0;" href="http://www.fudan.edu.cn/en/" class="thumbnail"><img src="ICSME/fudanuni.png" alt="Fudan University"></a>
+
       </div>
+
     </div>
+
   </div>
+
   </footer>
 
+
+
 </body>
+
 </html>
