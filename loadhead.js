@@ -8,6 +8,8 @@ if (level==1) {
 	var Programurl = "ToBeAnnounced.html";
 	var Socialurl = "ToBeAnnounced.html";
 
+	
+
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
 	var IndustryTrackCPF = "cfp/IndustryTrackCFP.html";
@@ -24,6 +26,8 @@ else {
 	var Registrationurl = "../ToBeAnnounced.html";
 	var Programurl = "../ToBeAnnounced.html";
 	var Socialurl = "../ToBeAnnounced.html";
+
+	
 
 	var ResearchTrackCFP = "ResearchTrackCFP.html";
 	var ERATrackCFP = "NIERTrackCFP.html";
@@ -46,7 +50,7 @@ var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbaru
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
 navbarcollapseul.append(li_registration);
 
-var li_program = $('<li><a href="'+Programurl+'">Program</a></li>');
+var li_program = $('<li><a href="'+Programurl+'">Program</a></li>');  
 navbarcollapseul.append(li_program);
       
 
@@ -61,8 +65,10 @@ li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></
 navbarcollapseul.append(li_cfp);        
           
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
-li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/">SCAM</a></li>');
-li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl">VISSOFT</a></li>');
+li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/" target="_blank">SCAM</a></li>');
+li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl" target="_blank">VISSOFT</a></li>');
+li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/Internetware2017" target="_blank">Internetware</a></li>');
+li_coevents.find('ul').append('<li><a href="#">China SE Research and Industry Summit</a></li>');
 navbarcollapseul.append(li_coevents); 
 
 var li_sevents = $('<li><a href="'+Socialurl+'">Social Events</a></li>');  
@@ -84,4 +90,9 @@ navpartcontainer.append(navbarcollapse);
 navpart.append(navpartcontainer);
 
 $('body').append(navpart);
+
+
+
 };
+
+
