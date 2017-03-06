@@ -66,7 +66,9 @@ td {
 
           $("#date5").hide(); 
 
-          $("#date6").hide(); 
+          $("#date6").hide();
+
+          $("#date7").hide(); 
 
         } else if(i==1) {
 
@@ -81,6 +83,8 @@ td {
           $("#date5").hide(); 
 
           $("#date6").hide(); 
+
+          $("#date7").hide();
 
         } else if(i==2) {
 
@@ -98,6 +102,9 @@ td {
 
           $("#date6").hide(); 
 
+          $("#date7").hide();
+
+
         } else if(i==3) {
 
           $("#date1").hide(); 
@@ -111,6 +118,8 @@ td {
           $("#date5").hide();
 
           $("#date6").hide(); 
+
+          $("#date7").hide();
 
         } else if(i==4) {
 
@@ -126,6 +135,8 @@ td {
 
           $("#date6").hide(); 
 
+          $("#date7").hide();
+
         } else if(i==5) {
 
           $("#date1").hide(); 
@@ -140,7 +151,10 @@ td {
 
           $("#date6").show(); 
 
-        } else {
+          $("#date7").hide(); 
+
+
+        } else if(i==6) {
 
           $("#date1").hide(); 
 
@@ -152,9 +166,25 @@ td {
 
           $("#date5").hide(); 
 
-          $("#date6").hide();            
+          $("#date6").hide(); 
 
-        }  
+          $("#date7").show();           
+
+        } else {
+          $("#date1").hide(); 
+
+          $("#date2").hide(); 
+
+          $("#date3").hide(); 
+
+          $("#date4").hide();
+
+          $("#date5").hide(); 
+
+          $("#date6").hide(); 
+
+          $("#date7").hide();
+        } 
 
       }
 
@@ -164,7 +194,7 @@ td {
 
         datepager = datepager + 1;
 
-        if(datepager == 6) datepager = 0;
+        if(datepager == 7) datepager = 0;
 
         callDatePager(datepager);
 
@@ -176,7 +206,7 @@ td {
 
         datepager = datepager - 1;
 
-        if(datepager == -1) datepager = 5;
+        if(datepager == -1) datepager = 7;
 
         callDatePager(datepager);
 
@@ -383,6 +413,14 @@ td {
 
                 <tr>
 
+                  <td class="newsdatecol">2017-3-4</td>
+
+                  <td class="newscontentcol"><a href="cfp/CallForJournalFirstPresentation.html">Call For Journal First Presentations</a> is available!</td>
+
+                </tr>  
+
+                <tr>
+
                   <td class="newsdatecol">2017-3-3</td>
 
                   <td class="newscontentcol"><a href="http://www.se.fudan.edu.cn/events/Internetware2017/" target="_blank">Internetware2017</a> is co-located with ICSME.</td>
@@ -401,7 +439,7 @@ td {
 
                   <td class="newsdatecol">2017-2-3</td>
 
-                  <td class="newscontentcol"><a href="cfp/ArtifactsTrackCFP.html" target="_blank">Artifacts Track CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/ArtifactsTrackCFP.html">Artifacts Track CFP</a> is available!</td>
 
                 </tr>               
 
@@ -409,7 +447,7 @@ td {
 
                   <td class="newsdatecol">2017-2-3</td>
 
-                  <td class="newscontentcol"><a href="cfp/IndustryTrackCFP.html" target="_blank">Industry Track CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/IndustryTrackCFP.html">Industry Track CFP</a> is available!</td>
 
                 </tr>
 
@@ -417,7 +455,7 @@ td {
 
                   <td class="newsdatecol">2016-12-7</td>
 
-                  <td class="newscontentcol"><a href="cfp/DoctoralSymposiumCFP.html" target="_blank">Doctoral Symposium CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/DoctoralSymposiumCFP.html" >Doctoral Symposium CFP</a> is available!</td>
 
                 </tr>
 
@@ -425,7 +463,7 @@ td {
 
                   <td class="newsdatecol">2016-12-1</td>
 
-                  <td class="newscontentcol"><a href="cfp/NIERTrackCFP.html" target="_blank">NIER Track CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/NIERTrackCFP.html">NIER Track CFP</a> is available!</td>
 
                 </tr>
 
@@ -433,7 +471,7 @@ td {
 
                   <td class="newsdatecol">2016-11-28</td>
 
-                  <td class="newscontentcol"><a href="cfp/ResearchTrackCFP.html" target="_blank">Research Track CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/ResearchTrackCFP.html">Research Track CFP</a> is available!</td>
 
                 </tr>
 
@@ -441,7 +479,7 @@ td {
 
                   <td class="newsdatecol">2016-10-18</td>
 
-                  <td class="newscontentcol"><a href="cfp/ToolDemoCFP.html" target="_blank">Tool Demo Track CFP</a> is available!</td>
+                  <td class="newscontentcol"><a href="cfp/ToolDemoCFP.html">Tool Demo Track CFP</a> is available!</td>
 
                 </tr>
 
@@ -544,6 +582,20 @@ td {
             <p>Author Notification:<span style="float:right;">July 21, 2017</span></p>
 
             <p>Camera Ready:<span style="float:right;">TBD</span></p>
+
+          </div>
+
+          <div id="date7" style="display: none;">
+
+            <h4 style="width:100%; text-align: center;">Call For Journal First Presentations</h4>
+
+            <p>Submission:<span style="float:right;">June 1, 2017</span></p>
+
+            <p>Notification:<span style="float:right;">June 26, 2017</span></p>
+
+            
+
+            
 
           </div>
 
