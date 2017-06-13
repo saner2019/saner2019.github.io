@@ -8,7 +8,7 @@ if (level==1) {
 	var Programurl = "ToBeAnnounced.html";
 	var Socialurl = "ToBeAnnounced.html";
 
-	
+	var PaperAccepted = "program/Accepted.html";
 
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
@@ -22,13 +22,13 @@ if (level==1) {
 	var orgcommitteeurl = "Organization Committee.html";
 	var procommitteeurl = "Program Committee.html";
 }
-else {
+else if (level==2) {
 	var indexurl = "../index.html";
 	var Registrationurl = "../ToBeAnnounced.html";
 	var Programurl = "../ToBeAnnounced.html";
 	var Socialurl = "../ToBeAnnounced.html";
 
-	
+	var PaperAccepted = "../program/Accepted.html";
 
 	var ResearchTrackCFP = "ResearchTrackCFP.html";
 	var ERATrackCFP = "NIERTrackCFP.html";
@@ -37,6 +37,27 @@ else {
 	var DoctoralCFP = "DoctoralSymposiumCFP.html";
 	var ArtifactsTrackCFP="ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="CallForJournalFirstPresentation.html"; 
+
+	var venueurl = "../venue.html";
+	var orgcommitteeurl = "../Organization Committee.html";
+	var procommitteeurl = "../Program Committee.html";
+}
+
+else if (level==3) {
+	var indexurl = "../index.html";
+	var Registrationurl = "../ToBeAnnounced.html";
+	var Programurl = "../ToBeAnnounced.html";
+	var Socialurl = "../ToBeAnnounced.html";
+
+	var PaperAccepted = "Accepted.html";
+
+	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
+	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
+	var IndustryTrackCPF = "../cfp/IndustryTrackCFP.html";
+	var ToolDemoTrackCFP = "../cfp/ToolDemoCFP.html";
+	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
+	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
+	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
 
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../Organization Committee.html";
@@ -52,7 +73,8 @@ var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbaru
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
 navbarcollapseul.append(li_registration);
 
-var li_program = $('<li><a href="'+Programurl+'">Program</a></li>');  
+var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');  
+li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
 navbarcollapseul.append(li_program);
       
 
