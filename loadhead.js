@@ -4,7 +4,7 @@ var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 
 if (level==1) {
 	var indexurl = "index.html";
-	var Registrationurl = "Registration.html";
+	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
 	var Socialurl = "ToBeAnnounced.html";
 
@@ -27,7 +27,7 @@ if (level==1) {
 }
 else if (level>=2) {
 	var indexurl = "../index.html";
-	var Registrationurl = "../Registration.html";
+	var Registrationurl = "../registration.html";
 	var Programurl = "../ToBeAnnounced.html";
 	var Socialurl = "../ToBeAnnounced.html";
 
