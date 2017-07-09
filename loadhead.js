@@ -9,6 +9,7 @@ if (level==1) {
 	var Socialurl = "ToBeAnnounced.html";
 
 	var PaperAccepted = "program/Accepted.html";
+	var keynotes = "program/keynotes.html";
 	var LGBT = "program/LGBT.html";
 
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
@@ -32,6 +33,7 @@ else if (level>=2) {
 	var Socialurl = "../ToBeAnnounced.html";
 
 	var PaperAccepted = "../program/Accepted.html";
+	var keynotes = "../program/keynotes.html";
 	var LGBT = "../program/LGBT.html";
 
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
@@ -83,6 +85,7 @@ navbarcollapseul.append(li_registration);
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');  
 li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
 navbarcollapseul.append(li_program);
       
