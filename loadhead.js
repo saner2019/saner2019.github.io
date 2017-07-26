@@ -23,6 +23,7 @@ if (level==1) {
 	var venueurl = "venue.html";
 	var orgcommitteeurl = "Organization Committee.html";
 	var procommitteeurl = "Program Committee.html";
+	var awardommitteeurl = "AwardCommittee.html";
 
 	var travelvisaurl = "travel/visareq.html";
 }
@@ -47,6 +48,7 @@ else if (level>=2) {
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../Organization Committee.html";
 	var procommitteeurl = "../Program Committee.html";
+	var awardommitteeurl = "../AwardCommittee.html";
 
 	var travelvisaurl = "../travel/visareq.html";
 }
@@ -118,6 +120,7 @@ var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-t
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
+li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
 navbarcollapseul.append(li_team);        
 
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
