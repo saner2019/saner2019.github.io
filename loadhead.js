@@ -26,6 +26,7 @@ if (level==1) {
 	var awardommitteeurl = "AwardCommittee.html";
 
 	var travelvisaurl = "travel/visareq.html";
+	var roomsharingurl = "travel/roomsharing.html";
 }
 else if (level>=2) {
 	var indexurl = "../index.html";
@@ -51,6 +52,7 @@ else if (level>=2) {
 	var awardommitteeurl = "../AwardCommittee.html";
 
 	var travelvisaurl = "../travel/visareq.html";
+	var roomsharingurl = "../travel/roomsharing.html";
 }
 /**
 else if (level==3) {
@@ -125,6 +127,7 @@ navbarcollapseul.append(li_team);
 
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
+li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
 navbarcollapseul.append(li_travel); 
 
 navbarcollapse.append(navbarcollapseul);
