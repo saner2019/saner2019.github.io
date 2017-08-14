@@ -11,6 +11,7 @@ if (level==1) {
 	var PaperAccepted = "program/Accepted.html";
 	var keynotes = "program/keynotes.html";
 	var LGBT = "program/LGBT.html";
+	var Scheduleurl = "program/schedule.html";
 
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
@@ -38,6 +39,7 @@ else if (level>=2) {
 	var PaperAccepted = "../program/Accepted.html";
 	var keynotes = "../program/keynotes.html";
 	var LGBT = "../program/LGBT.html";
+    var Scheduleurl = "../program/schedule.html";
 
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
@@ -93,6 +95,7 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
 li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
 li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
+    li_program.find('ul').append('<li><a href="'+Scheduleurl+'">Schedule</a></li>');
 navbarcollapseul.append(li_program);
       
 
