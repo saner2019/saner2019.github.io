@@ -11,7 +11,8 @@ if (level==1) {
 	var PaperAccepted = "program/Accepted.html";
 	var keynotes = "program/keynotes.html";
 	var LGBT = "program/LGBT.html";
-	var Scheduleurl = "program/schedule.html";
+    var Scheduleurl = "program/schedule.html";
+    var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
 
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
@@ -40,6 +41,7 @@ else if (level>=2) {
 	var keynotes = "../program/keynotes.html";
 	var LGBT = "../program/LGBT.html";
     var Scheduleurl = "../program/schedule.html";
+    var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
 
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
@@ -91,11 +93,13 @@ var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbaru
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
 navbarcollapseul.append(li_registration);
 
-var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');  
-li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
-li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
-li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
-    li_program.find('ul').append('<li><a href="'+Scheduleurl+'">Schedule</a></li>');
+var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
+    li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
+    li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
+	li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
+    li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+
 navbarcollapseul.append(li_program);
       
 
