@@ -30,6 +30,10 @@ if (level==1) {
 	var travelvisaurl = "travel/visareq.html";
     var touristguideurl = "travel/Tourist.html";
 	var roomsharingurl = "travel/roomsharing.html";
+
+    var DocSymDinnerReceptionBanqueturl = "SocialEvents/DocSymDinner&Reception&Banquet.html";
+    var GamesReceptionurl = "SocialEvents/Games@Reception.html";
+    var Toururl = "SocialEvents/Tour.html";
 }
 else if (level>=2) {
 	var indexurl = "../index.html";
@@ -59,6 +63,10 @@ else if (level>=2) {
 	var travelvisaurl = "../travel/visareq.html";
 	var touristguideurl = "../travel/Tourist.html";
 	var roomsharingurl = "../travel/roomsharing.html";
+
+    var DocSymDinnerReceptionBanqueturl = "../SocialEvents/DocSymDinner&Reception&Banquet.html";
+    var GamesReceptionurl = "../SocialEvents/Games@Reception.html";
+    var Toururl = "../SocialEvents/Tour.html";
 }
 /**
 else if (level==3) {
@@ -119,10 +127,13 @@ li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/" targ
 li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl" target="_blank">VISSOFT</a></li>');
 li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/Internetware2017" target="_blank">Internetware</a></li>');
 li_coevents.find('ul').append('<li><a href="#">China SE Research and Industry Summit</a></li>');
-navbarcollapseul.append(li_coevents); 
+navbarcollapseul.append(li_coevents);
 
-var li_sevents = $('<li><a href="'+Socialurl+'">Social Events</a></li>');  
-navbarcollapseul.append(li_sevents); 
+    var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_socialevents.find('ul').append('<li><a href="'+DocSymDinnerReceptionBanqueturl+'">DocSym Dinner&Reception&Banquet</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+GamesReceptionurl+'">Games@Reception</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+Toururl+'">Tour</a></li>');
+    navbarcollapseul.append(li_socialevents);
 
 var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
 navbarcollapseul.append(li_venue); 
