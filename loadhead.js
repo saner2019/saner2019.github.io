@@ -126,7 +126,7 @@ var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" da
 li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/" target="_blank">SCAM</a></li>');
 li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl" target="_blank">VISSOFT</a></li>');
 li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/Internetware2017" target="_blank">Internetware</a></li>');
-li_coevents.find('ul').append('<li><a href="#">China SE Research and Industry Summit</a></li>');
+li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/SESummit2017/">China SE Research and Industry Summit</a></li>');
 navbarcollapseul.append(li_coevents);
 
     var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
