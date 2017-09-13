@@ -13,8 +13,9 @@ if (level==1) {
 	var LGBT = "program/LGBT.html";
     var Scheduleurl = "program/schedule.html";
     var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
+    var ScheduleBook = "program/ICSME2017_Program.pdf";
 
-	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
+    var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
 	var IndustryTrackCPF = "cfp/IndustryTrackCFP.html";
 	var ToolDemoTrackCFP = "cfp/ToolDemoCFP.html";
@@ -46,6 +47,7 @@ else if (level>=2) {
 	var LGBT = "../program/LGBT.html";
     var Scheduleurl = "../program/schedule.html";
     var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
+    var ScheduleBook = "../program/ICSME2017_Program.pdf";
 
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
@@ -107,6 +109,8 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
     li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 	li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+    li_program.find('ul').append('<li><a href="'+ScheduleBook+'">Printable Program</a></li>');
+
 
 navbarcollapseul.append(li_program);
       
