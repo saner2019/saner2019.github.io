@@ -35,6 +35,7 @@ if (level==1) {
     var DocSymDinnerReceptionBanqueturl = "SocialEvents/DocSymDinner&Reception&Banquet.html";
     var GamesReceptionurl = "SocialEvents/Games@Reception.html";
     var Toururl = "SocialEvents/Tour.html";
+    var SportsGames = "SocialEvents/SportsGames.html";
 }
 else if (level>=2) {
 	var indexurl = "../index.html";
@@ -69,6 +70,7 @@ else if (level>=2) {
     var DocSymDinnerReceptionBanqueturl = "../SocialEvents/DocSymDinner&Reception&Banquet.html";
     var GamesReceptionurl = "../SocialEvents/Games@Reception.html";
     var Toururl = "../SocialEvents/Tour.html";
+    var SportsGames = "../SocialEvents/SportsGames.html";
 }
 /**
 else if (level==3) {
@@ -137,6 +139,7 @@ navbarcollapseul.append(li_coevents);
     li_socialevents.find('ul').append('<li><a href="'+DocSymDinnerReceptionBanqueturl+'">DocSym Dinner&Reception&Banquet</a></li>');
     li_socialevents.find('ul').append('<li><a href="'+GamesReceptionurl+'">Games@Reception</a></li>');
     li_socialevents.find('ul').append('<li><a href="'+Toururl+'">Tour</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+SportsGames+'">Sprots Games</a></li>');
     navbarcollapseul.append(li_socialevents);
 
 var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
