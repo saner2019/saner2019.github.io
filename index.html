@@ -3,332 +3,315 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>SANER 2019</title>
+    <meta charset="UTF-8">
+    <title>SANER 2019</title>
 
-  <link rel="stylesheet" href="bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/3.3.0/css/bootstrap.min.css">
 
-  <style>
+    <style>
 
-    .newsdatecol {
+        .newsdatecol {
 
-      width: 22%;
+            width: 22%;
 
-      top: 0;
+            top: 0;
 
-      font-weight:bold;
+            font-weight: bold;
 
-      text-align:left;
+            text-align: left;
 
-      margin-top: 0;
+            margin-top: 0;
 
-      vertical-align: top !important;
+            vertical-align: top !important;
 
-    }
+        }
 
-    .newscontentcol {
+        .newscontentcol {
 
-      width: 75%;
+            width: 75%;
 
-      padding-left:8px;
+            padding-left: 8px;
 
-      text-align:left;
+            text-align: left;
 
+        }
 
+    </style>
+    <style type="text/css">
+        td {
+            text-align: center; /*设置水平居中*/
+            vertical-align: middle !important; /*设置垂直居中*/
+        }
 
-    }
+    </style>
+    <script src="jquery/1.11.1/jquery.min.js"></script>
 
-  </style>
-<style type="text/css">
-td {
-      text-align:center; /*设置水平居中*/
-      vertical-align:middle !important;/*设置垂直居中*/
-}
+    <script src="bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-</style>
-  <script src="jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
 
-  <script src="bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="bootstrap/3.3.0/css/bootstrap.min.css"></script>
 
-  <script src="bootstrap-hover-dropdown/2.0.10/bootstrap-hover-dropdown.min.js"></script>
+    <script>
 
-  <script src="bootstrap/3.3.0/css/bootstrap.min.css"></script>
+        var datepager = 0;
 
-  <script>
+        function callDatePager(i) {
 
-      var datepager = 0;
+            if (i == 0) {
 
-      function callDatePager(i) {
+                $("#date1").show();
 
-        if(i==0) {
+                $("#date2").hide();
 
-          $("#date1").show(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide(); 
+                $("#date6").hide();
 
-          $("#date5").hide(); 
+                $("#date7").hide();
 
-          $("#date6").hide();
+            } else if (i == 1) {
 
-          $("#date7").hide(); 
+                $("#date1").hide();
 
-        } else if(i==1) {
+                $("#date2").show();
 
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").show(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide(); 
+                $("#date6").hide();
 
-          $("#date5").hide(); 
+                $("#date7").hide();
 
-          $("#date6").hide(); 
+            } else if (i == 2) {
 
-          $("#date7").hide();
+                $("#date1").hide();
 
-        } else if(i==2) {
+                $("#date2").hide();
 
-          $("#date1").hide(); 
+                $("#date3").show();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").show(); 
+                $("#date4").hide();
 
-          $("#date4").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide(); 
+                $("#date6").hide();
 
-          $("#date5").hide();
+                $("#date7").hide();
 
-          $("#date6").hide(); 
 
-          $("#date7").hide();
+            } else if (i == 3) {
 
+                $("#date1").hide();
 
-        } else if(i==3) {
+                $("#date2").hide();
 
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").show();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").show(); 
+                $("#date6").hide();
 
-          $("#date5").hide();
+                $("#date7").hide();
 
-          $("#date6").hide(); 
+            } else if (i == 4) {
 
-          $("#date7").hide();
+                $("#date1").hide();
 
-        } else if(i==4) {
+                $("#date2").hide();
 
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").show();
 
-          $("#date4").hide(); 
+                $("#date6").hide();
 
-          $("#date5").show();
+                $("#date7").hide();
 
-          $("#date6").hide(); 
+            } else if (i == 5) {
 
-          $("#date7").hide();
+                $("#date1").hide();
 
-        } else if(i==5) {
+                $("#date2").hide();
 
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide(); 
+                $("#date6").show();
 
-          $("#date5").hide();
+                $("#date7").hide();
 
-          $("#date6").show(); 
 
-          $("#date7").hide(); 
+            } else if (i == 6) {
 
+                $("#date1").hide();
 
-        } else if(i==6) {
+                $("#date2").hide();
 
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide();
+                $("#date6").hide();
 
-          $("#date5").hide(); 
+                $("#date7").show();
 
-          $("#date6").hide(); 
+            } else {
+                $("#date1").hide();
 
-          $("#date7").show();           
+                $("#date2").hide();
 
-        } else {
-          $("#date1").hide(); 
+                $("#date3").hide();
 
-          $("#date2").hide(); 
+                $("#date4").hide();
 
-          $("#date3").hide(); 
+                $("#date5").hide();
 
-          $("#date4").hide();
+                $("#date6").hide();
 
-          $("#date5").hide(); 
+                $("#date7").hide();
+            }
 
-          $("#date6").hide(); 
+        }
 
-          $("#date7").hide();
-        } 
 
-      }
+        function nextDatePager() {
 
-    
+            datepager = datepager + 1;
 
-      function nextDatePager() {
+            if (datepager == 7) datepager = 0;
 
-        datepager = datepager + 1;
+            callDatePager(datepager);
 
-        if(datepager == 7) datepager = 0;
+        }
 
-        callDatePager(datepager);
 
-      }
+        function prevDatePager() {
 
-    
+            datepager = datepager - 1;
 
-      function prevDatePager() {
+            if (datepager == -1) datepager = 6;
 
-        datepager = datepager - 1;
+            callDatePager(datepager);
 
-        if(datepager == -1) datepager = 6;
+        }
 
-        callDatePager(datepager);
 
-      }  
+        var filmpager = 0;
 
+        function callFilmPager(i) {
 
+            if (i == 0) {
 
-      var filmpager = 0;
+                $("#film1").show();
 
-      function callFilmPager(i) {
+                $("#film2").hide();
 
-       if(i==0) {
+            } else if (i == 1) {
 
-          $("#film1").show(); 
+                $("#film1").hide();
 
-          $("#film2").hide();  
+                $("#film2").show();
 
-        } else if(i==1) {
+            } else {
 
-          $("#film1").hide(); 
+                $("#film1").hide();
 
-          $("#film2").show();  
+                $("#film2").hide();
 
-        } else {
+            }
 
-          $("#film1").hide(); 
+        }
 
-          $("#film2").hide();             
 
-        }  
+        function nextFilmPager() {
 
-      }
+            filmpager = filmpager + 1;
 
-    
+            if (filmpager == 2) filmpager = 0;
 
-      function nextFilmPager() {
+            callFilmPager(filmpager);
 
-        filmpager = filmpager + 1;
+        }
 
-        if(filmpager == 2) filmpager = 0;
 
-        callFilmPager(filmpager);
+        function prevFilmPager() {
 
-      }
+            filmpager = filmpager - 1;
 
-    
+            if (filmpager == -1) filmpager = 1;
 
-      function prevFilmPager() {
+            callFilmPager(filmpager);
 
-        filmpager = filmpager - 1;
+        }
 
-        if(filmpager == -1) filmpager = 1;
 
-        callFilmPager(filmpager);
+        function setAnimation(id, effect) {
 
-      }  
+            $("#" + id).removeClass().addClass(effect + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
 
-      
+            });
 
-      function setAnimation(id, effect) {
 
-        $("#"+id).removeClass().addClass(effect +' animated').
+        }
 
-        one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
+        $(document).ready(function () {
+
+
+            $('.pager .pulsante').click(function (e) {
+
+                $(this).blur();
+
+            });
+
+
+            callDatePager(datepager);
+
+            callFilmPager(filmpager);
+
+
+            /*
+
+            $("#mainTitle").click(function() {
+
+              setAnimation("mainTitle", "hinge");
+
+              setTimeout('setAnimation("mainTitle","bounceInRight");',3000);
+
+            });
+
+
+
+            $("#subTitle").click(function() {
+
+              setAnimation("subTitle", "hinge");
+
+              setTimeout('setAnimation("subTitle","bounceInLeft");',3000);
+
+            });
+
+            */
 
         });
-
-        
-
-      }
-
-      
-
-      
-
-    $(document).ready(function(){ 
-
-
-
-    $('.pager .pulsante').click(function(e) {
-
-          $(this).blur();
-
-    });     
-
-      
-
-    callDatePager(datepager);
-
-    callFilmPager(filmpager);  
-
-    
-
-    /*
-
-    $("#mainTitle").click(function() {
-
-      setAnimation("mainTitle", "hinge");
-
-      setTimeout('setAnimation("mainTitle","bounceInRight");',3000);
-
-    });
-
-    
-
-    $("#subTitle").click(function() {
-
-      setAnimation("subTitle", "hinge");
-
-      setTimeout('setAnimation("subTitle","bounceInLeft");',3000);
-
-    });   
-
-    */
-
-    }); 
 
     </script>
 
@@ -336,373 +319,228 @@ td {
 
 <body>
 
-  <script src="loadhead.js"></script>
-  <script>loadheaderexecute(1);</script>
-  <script>loadCarousel(1);</script>
+<script src="loadhead.js"></script>
+<script>loadheaderexecute(1);</script>
+<script>loadCarousel(1);</script>
 
 
-  <div class="container">
-
-  <table class="table table-bordered table-condensed" style="margin-top:5px;font-size:small;">
-            
-            <thead>
-
-              <tr style=" background-color:#d9edf7;">
-                <th class="text-center">Sun 9/17</th>
-                <th class="text-center">Mon 9/18</th>
-                <th class="text-center">Tue 9/19</th>
-                <th class="text-center">Wed 9/20</th>
-                <th class="text-center">Thu 9/21</th>
-                <th class="text-center">Fri 9/22</th>
-                <th class="text-center">Sat 9/23</th>
-                <th class="text-center">Sun 9/24</th>
-              </tr>
-              <tr style=" background-color:#d9edf7;">
-                <td colspan="2" align="center"><a href="http://www.ieee-scam.org/2017/" target="_blank">SCAM</a></td>
-                <td align="center"><a href="program/DoctoralSymposium.html">Doctoral<br>
-                    Symposium</a>
-                </td>
-                <td colspan="3" rowspan="2" align="center">
-                    ICSME (<a href="program/schedule.html">Program Schedule</a>)
-                </td>
-                <td rowspan="2" align="center">
-                    <a href="http://www.se.fudan.edu.cn/events/Internetware2017" target="_blank">Internetware</a>
-                </td>
-                <td colspan="3" rowspan="2" align="center" >
-                    <a href="http://www.se.fudan.edu.cn/events/SESummit2017/" target="_blank">
-                    China SE<br>
-                    Research and<br>
-                    Industry Summit
-                    </a>
-                </td>
-              </tr>
-              <tr style=" background-color:#d9edf7;">
-                <td></td>
-                <td colspan="2" align="center"><a href="http://vissoft17.dcc.uchile.cl/" target="_blank">VISSOFT</a></td>
-              </tr>
-            </thead>
-          </table>
-
-
-
-
-
-  <div class="row">
-
-    <div class="col-xs-12">
-
-	<div class="row">
-    <div class="col-md-4" role="main">
-      <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Latest News</h3>
-            </div>
-
-            <div class="panel-body" style="pdding-bottom: 0;height: 285px;padding: 15px;">
-              <table>
-                <tr>
-                  <td class="newsdatecol">2018-2-26</td>
-                  <td class="newscontentcol"> The website for SNAER2019 has been published!  </td>
-              </table>
-            </div>
-            <div class="panel-footer text-right">
-              <a href="news.html">More</a>
-            </div>
-      </div>
-
-
-
-      <div class="panel panel-danger">
-        <div class="panel-heading">
-          <h3 class="panel-title">Important Dates</h3>
-        </div>
-        <div class="panel-body" style="pdding-bottom: 0;height: 228px;padding: 0 15px;">
-          <div id="date1" style="display: block;">        
-
-            <h4 style="width:100%; text-align: center;">Research Track</h4>
-
-            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">Thursday, March 30, 2017</span></p>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">Thursday, April 6, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;"> Monday, June 12, 2017</span></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">Thursday, August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date2" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">NIER Track</h4>
-
-            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date3" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">Industry Track</h4>
-
-            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 29, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date4" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">Tool Demo Track</h4>
-
-            <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span></p>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date5" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">Artifacts Track</h4>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">Monday, June 26, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;">Friday, July 21, 2017</span></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">Thursday, August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date6" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
-
-            <p>Paper Submission:<span style="float:right;text-decoration:line-through;">July 10, 2017</span></p>
-
-            <p>Author Notification:<span style="float:right;text-decoration:line-through;">July 21, 2017</span></p>
-
-            <p>Camera Ready:<span style="float:right;text-decoration:line-through;">August 3, 2017</span></p>
-
-          </div>
-
-          <div id="date7" style="display: none;">
-
-            <h4 style="width:100%; text-align: center;">Journal First Presentations</h4>
-
-            <p>Submission:<span style="float:right;text-decoration:line-through;">June 8, 2017</span></p>
-
-            <p>Notification:<span style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
-
-          </div>
-
-          <br>
-
-          <ul class="pager" style="margin: 3px 5px 0 5px;">
-
-            <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a></li>
-
-            <li class="next"><a href="javascript:nextDatePager();">&raquo;</a></li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-
-
- </div>
-
-      <h2>Welcome</h2> 
-
-      <hr>
-
-      <p style="text-align: justify;"><strong>SANER</strong> is the premier research conference on the theory and practice of recovering information from existing software and systems. It explores innovative methods of extracting the many kinds of information that can be recovered from software, software engineering documents, and systems artifacts, and examines innovative ways of using this information in system renovation and program understanding.</p>
-
-      <p style="text-align: justify;"><b>SANER</b> promotes discussion and interaction among researchers and practitioners about the development of maintainable systems, and the improvement, evolution, migration, and reengineering of existing systems. It also explores innovative methods of extracting the many kinds of information of interest to software developers and examines innovative ways of using this information in system renovation and program understanding.</p>
-      <p style="text-align: justify;"><b>SANER</b> will feature technical research paper sessions, workshops, an early research achievements track, an industry paper track, a tool demonstration track, a doctoral symposium, and also a number of co-located events.</p>
-
-      <hr>  
-
-    </div>
-
-    
-
-
-
-    
-
-    <div class="col-md-4">
-
-      <div class="panel panel-info">
-
-        <div class="panel-heading">
-
-          <h3 class="panel-title">Shanghai,City of Innovation</h3>
-
-        </div>
-
-        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
-
-          <div id="film1" style="display: block;">
-            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
-
-            <div class="embed-responsive embed-responsive-16by9">
-
-              <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
-
-            </div>  
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="col-md-4">
-
-      <div class="panel panel-info">
-
-        <div class="panel-heading">
-
-          <h3 class="panel-title">Fudan University</h3>
-
-        </div>
-
-        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
-
-          <div id="film1" style="display: block;"> 
-
-            
-
-            <p style="font-size:xx-small;width:100%; text-align: center;">video from www.youku.com</p>
-
-            <div class="embed-responsive embed-responsive-16by9">
-
-              <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
-
-            </div>  
-
-          </div>
-
-          
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-
-  </div>
-
-
-
-  <hr style="height:5px;">
-
-
-
-  <footer class="icsme2017" role="contentinfo" >
-
-  <div class="container">
+<div class="container">
 
     <div class="row">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-md-4" role="main">
+                    <br>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Latest News</h3>
+                        </div>
 
-      <p class="lead text-center">Sponsors</p>
+                        <div class="panel-body" style="pdding-bottom: 0;height: 225px;padding: 15px;">
+                            <table>
+                                <tr>
+                                    <td class="newsdatecol">2018-2-26</td>
+                                    <td class="newscontentcol"> The website for SNAER2019 has been published!</td>
+                            </table>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a href="news.html">More</a>
+                        </div>
+                    </div> <!--panel-primary-->
 
-    </div>
+                </div><!--first column-->
 
-    <div class="row">
+                <div class="col-md-8">
+                    <h2>Welcome</h2>
+                    <hr>
+                    <p style="text-align: justify;"><strong>SANER</strong> is the premier research conference on the
+                        theory and practice of recovering information from existing software and systems. It explores
+                        innovative methods of extracting the many kinds of information that can be recovered from
+                        software, software engineering documents, and systems artifacts, and examines innovative ways of
+                        using this information in system renovation and program understanding.</p>
 
-      <div class="col-xs-6 col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-3">
+                    <p style="text-align: justify;"><b>SANER</b> promotes discussion and interaction among researchers
+                        and practitioners about the development of maintainable systems, and the improvement, evolution,
+                        migration, and reengineering of existing systems. It also explores innovative methods of
+                        extracting the many kinds of information of interest to software developers and examines
+                        innovative ways of using this information in system renovation and program understanding.</p>
+                    <p style="text-align: justify;"><b>SANER</b> will feature technical research paper sessions,
+                        workshops, an early research achievements track, an industry paper track, a tool demonstration
+                        track, a doctoral symposium, and also a number of co-located events.</p>
+                    <hr>
+                </div>
+            </div> <!--first row-->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Important Dates</h3>
+                        </div>
+                        <div class="panel-body" style="pdding-bottom: 0;height: 228px;padding: 0 15px;">
+                            <div id="date1" style="display: block;">
 
-        <a style="border:0;" href="http://www.computer.org" class="thumbnail"><img src="ICSME/ieee-cs.jpg" alt="IEEE Computer Society"></a>
+                                <h4 style="width:100%; text-align: center;">Research Track</h4>
 
-      </div>
+                                <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">Thursday, March 30, 2017</span>
+                                </p>
 
-      <div class="col-xs-6 col-sm-5 col-md-4 col-lg-3">
+                                <p>Paper Submission:<span style="float:right;text-decoration:line-through;">Thursday, April 6, 2017</span>
+                                </p>
+                            </div>
 
-        <a style="border:0;" href="http://www.computer.org/portal/web/tcse/home" class="thumbnail"><img src="ICSME/ieee-tcse.jpg" alt="IEEE Technical Council on Software Engineering"></a>
+                            <div id="date2" style="display: none;">
 
-      </div>
+                                <h4 style="width:100%; text-align: center;">NIER Track</h4>
 
-    </div>
+                                <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span>
+                                </p>
 
-    <div class="row">
+                            </div>
 
-      <p class="lead text-center">Supporters</p>
+                            <div id="date3" style="display: none;">
 
-    </div>
-     
-    <div class="row">
+                                <h4 style="width:100%; text-align: center;">Industry Track</h4>
 
-      <p class="platinum-text sublead text-center" style="font-size:18px;color:#e5e4e2;">Platinum</p>
+                                <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span>
+                                </p>
 
-    </div>
+                            </div>
 
-    <div class="row">
+                            <div id="date4" style="display: none;">
 
-      <div class="col-xs-12">
+                                <h4 style="width:100%; text-align: center;">Tool Demo Track</h4>
 
-        <a style="border:0;" class="thumbnail"><img style="width:35%;" src="ICSME/huawei.jpg" alt="HuaWei"></a>
+                                <p>Abstract Submission:<span style="float:right;text-decoration:line-through;">June 19, 2017</span>
+                                </p>
 
-      </div>
+                            </div>
 
-    </div> 
-    <div class="row">
+                            <div id="date5" style="display: none;">
 
-      <p class="platinum-text sublead text-center" style="font-size:18px;color:#FFD700;">Gold</p>
+                                <h4 style="width:100%; text-align: center;">Artifacts Track</h4>
 
-    </div>
+                                <p>Paper Submission:<span style="float:right;text-decoration:line-through;">Monday, June 26, 2017</span>
+                                </p>
 
-    <div class="row">
+                            </div>
 
-      <div class="col-xs-12">
+                            <div id="date6" style="display: none;">
 
-        <a style="border:0;" class="thumbnail"><img style="width:35%;" src="ICSME/microsoft.png" alt="Microsoft"></a>
+                                <h4 style="width:100%; text-align: center;">Doctoral Symposium</h4>
 
-      </div>
+                                <p>Paper Submission:<span style="float:right;text-decoration:line-through;">July 10, 2017</span>
+                                </p>
 
-    </div> 
+                            </div>
 
-    <div class="row">
+                            <div id="date7" style="display: none;">
 
-      <p class="lead text-center">Patrons</p>
+                                <h4 style="width:100%; text-align: center;">Journal First Presentations</h4>
 
-    </div>
+                                <p>Submission:<span
+                                        style="float:right;text-decoration:line-through;">June 8, 2017</span></p>
 
-    
+                                <p>Notification:<span
+                                        style="float:right;text-decoration:line-through;">June 26, 2017</span></p>
 
-    <div class="row">
+                            </div>
 
-      <div class="col-xs-12">
+                            <br>
 
-        <a style="border:0;" href="http://www.fudan.edu.cn/en/" class="thumbnail"><img src="ICSME/fudanuni.png" alt="Fudan University"></a>
+                            <ul class="pager" style="margin: 3px 5px 0 5px;">
 
-      </div>
+                                <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a>
+                                </li>
 
-    </div>
+                                <li class="next"><a href="javascript:nextDatePager();">&raquo;</a></li>
 
-  </div>
+                            </ul>
+                        </div>
+                    </div>
 
-  </footer>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Hangzhou,China</h3>
+                        </div>
+                        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+                            <div id="film1" style="display: block;">
+                                <p style="font-size:xx-small;width:100%; text-align: center;">video from
+                                    www.youku.com</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item" src="video\shanghai.mp4" controls></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Zhejiang University</h3>
+                        </div>
+                        <div class="panel-body" style="pdding-bottom: 0;height: 225x;padding: 0;">
+                            <div id="film1" style="display: block;">
+                                <p style="font-size:xx-small;width:100%; text-align: center;">video from
+                                    www.youku.com</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <video class="embed-responsive-item" src="video\fudan.mp4" controls></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 第2行 视频-->
+            <div class="row">
+                <div class="col-md-12 padd">
+                    <div class="panel panel-warning" style="border-radius: 4px;">
+                        <div class="panel-heading clearfix">
+                            <div class="panel-title"><i class="fa fa-life-ring" aria-hidden="true"></i>&nbsp;Supporters
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <tbody>
+                                <!-- SUPPORTED -->
+                                <tr>
+                                    <td>
+                                        <span class="supporter-logo">
+                                            <a href="http://www.zju.edu.cn/" target="_blank">
+                                                <img src="img_system/logo/zju.png" alt="zju_Logo">
+                                            </a>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="supporter-logo">
+                                            <a href="http://www.zju.edu.cn/" target="_blank">
+                                                <img src="img_system/logo/ieee_home.png" alt="ieee">
+                                            </a>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span class="supporter-logo">
+                                            <a href="http://www.huawei.com/" target="_blank">
+                                                <img src="img_system/logo/huawei.jpg" alt="huawei"/>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- 第3行 赞助商-->
+            </section>
 
 
+        </div><!--<div class="col-xs-12">-->
 
+    </div> <!--总行-->
+</div> <!--container-->
 </body>
 
 </html>

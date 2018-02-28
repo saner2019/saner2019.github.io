@@ -174,11 +174,11 @@ navbarcollapseul.append(li_team);
 function loadCarousel(level) {
 
     if (level==1){
-        var slide1="./img_system/001.jpeg";
+        var slide1="./img_system/tradition1.png";
         var slide2="./img_system/002.jpg";
         var slide3="./img_system/003.jpg";
     }else{
-        var slide1="../img_system/001.jpeg";
+        var slide1="../img_system/tradition1.png";
         var slide2="../img_system/002.jpg";
         var slide3="../img_system/003.jpg";
     }
