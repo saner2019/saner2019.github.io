@@ -39,7 +39,6 @@ function loadCarousel(level) {
         var slide2 = "../img_system/002.jpg";
         var slide3 = "../img_system/003.jpg";
     }
-
     var carousel = $('<div class="container">\n' +
         '    <div id="myCarousel" class="carousel slide">\n' +
         '        <!-- 轮播（Carousel）指标 -->\n' +
@@ -68,6 +67,10 @@ function loadCarousel(level) {
     $(document).ready(function () {
         $('#myCarousel').carousel({interval: 3000});//每隔5秒自动轮播
     });
+
+};
+
+function test(level) {
 
 };
 
