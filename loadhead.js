@@ -153,23 +153,64 @@ li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Ste
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
-navbarcollapseul.append(li_team);        
+navbarcollapseul.append(li_team);
 
-var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
-li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>');
-li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
-navbarcollapseul.append(li_travel); 
+    var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
+    li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>');
+    li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
+    navbarcollapseul.append(li_travel);
 
-navbarcollapse.append(navbarcollapseul);
+    navbarcollapse.append(navbarcollapseul);
 
-navpartcontainer.append(navbarcollapse);
+    navpartcontainer.append(navbarcollapse);
 
-navpart.append(navpartcontainer);
+    navpart.append(navpartcontainer);
 
-$('body').append(navpart);
+    $('body').append(navpart);
 
+};
 
+function loadCarousel(level) {
+
+    if (level==1){
+        var slide1="./img_system/001.jpeg";
+        var slide2="./img_system/002.jpg";
+        var slide3="./img_system/003.jpg";
+    }else{
+        var slide1="../img_system/001.jpeg";
+        var slide2="../img_system/002.jpg";
+        var slide3="../img_system/003.jpg";
+    }
+
+    var carousel= $('<div class="container">\n' +
+        '    <div id="myCarousel" class="carousel slide">\n' +
+        '        <!-- 轮播（Carousel）指标 -->\n' +
+        '        <ol class="carousel-indicators">\n' +
+        '            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>\n' +
+        '            <li data-target="#myCarousel" data-slide-to="1"></li>\n' +
+        '            <li data-target="#myCarousel" data-slide-to="2"></li>\n' +
+        '        </ol>\n' +
+        '        <!-- 轮播（Carousel）项目 -->\n' +
+        '        <div class="carousel-inner">\n' +
+        '            <div class="item active">\n' +
+        '                <img src="'+slide1+'" alt="First slide">\n' +
+        '            </div>\n' +
+        '            <div class="item">\n' +
+        '                <img src="'+slide2+'" alt="Second slide">\n' +
+        '            </div>\n' +
+        '            <div class="item">\n' +
+        '                <img src="'+slide3+'" alt="Third slide">\n' +
+        '            </div>\n' +
+        '        </div>\n' +
+        '    </div>\n' +
+        '</div>');
+
+    $('body').append(carousel)
+
+    $(document).ready(function(){
+        $('#myCarousel').carousel({interval:3000});//每隔5秒自动轮播
+    });
 
 };
 
