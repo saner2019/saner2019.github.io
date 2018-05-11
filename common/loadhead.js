@@ -10,9 +10,12 @@ function loadheaderexecute(level) {
     if (level == 1) {
         var indexurl = "index.html";
         var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
+        var OrganizeTeam= "team/organize-team.html"
     }
     else if (level >= 2) {
-        var indexurl = "index.html";
+        var indexurl = "../index.html";
+        var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
+        var OrganizeTeam= "../team/organize-team.html"
     }
 
     var navbarheader = $('<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="' + indexurl + '">SANER 2019</a></div>');
@@ -39,7 +42,7 @@ function loadheaderexecute(level) {
 
      // add committee
     var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Committee<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    li_team.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Organizing Team</a></li>');
+    li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Team</a></li>');
     navbarcollapseul.append(li_team);
 
 
