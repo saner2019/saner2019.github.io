@@ -1,22 +1,47 @@
+/**
+ * set the relative path of the resources
+ * @param level  the level where a file at. The file refers to that call this function
+ */
+
 function loadheaderexecute(level) {
     var navpart = $('<nav class="navbar navbar-default" role="navigation"></nav>');
     var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 
     if (level == 1) {
         var indexurl = "index.html";
-
+        var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
     }
     else if (level >= 2) {
-        var indexurl = "../index.html";
-
+        var indexurl = "index.html";
     }
-
 
     var navbarheader = $('<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="' + indexurl + '">SANER 2019</a></div>');
     navpartcontainer.append(navbarheader);
 
     var navbarcollapse = $('<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>');
     var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbarul"></ul>');
+
+
+    /*
+    *
+    * add Call for paper bar
+    * */
+    var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
+    navbarcollapseul.append(li_cfp);
+
+
+     // add committee
+    var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Committee<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_team.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Organizing Team</a></li>');
+    navbarcollapseul.append(li_team);
+
 
     navbarcollapse.append(navbarcollapseul);
 
