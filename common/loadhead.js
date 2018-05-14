@@ -54,7 +54,7 @@ function loadheaderexecute(level) {
 
     // add venue
     var li_venue=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Venue<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    #li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
+    //li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About ZJU</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
     navbarcollapseul.append(li_venue);
