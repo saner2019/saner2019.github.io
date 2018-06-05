@@ -54,7 +54,7 @@ function loadheaderexecute(level) {
 
     // add venue
     var li_venue=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Venue<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
+    // li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About ZJU</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
     navbarcollapseul.append(li_venue);
@@ -73,11 +73,11 @@ function loadheaderexecute(level) {
 function loadCarousel(level) {
 
     if (level == 1) {
-        var slide1 = "./img_system/tradition1.png";
+        var slide1 = "./img_system/ZJU-6.jpeg";
         var slide2 = "./img_system/002.jpg";
         var slide3 = "./img_system/003.jpg";
-    } else {
-        var slide1 = "../img_system/tradition1.png";
+    } else{
+        var slide1 = "../img_system/ZJU-6.jpeg";
         var slide2 = "../img_system/002.jpg";
         var slide3 = "../img_system/003.jpg";
     }
