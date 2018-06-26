@@ -10,6 +10,7 @@ function loadheaderexecute(level) {
     if (level == 1) {
         var indexurl = "index.html";
         var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
+        var ERATrackCFP = "cfp/ERATrackCFP.html";
         var OrganizeTeam= "team/organize-team.html"
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
@@ -18,6 +19,7 @@ function loadheaderexecute(level) {
     else if (level >= 2) {
         var indexurl = "../index.html";
         var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
+        var ERATrackCFP = "../cfp/ERATrackCFP.html";
         var OrganizeTeam= "../team/organize-team.html"
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
@@ -37,7 +39,7 @@ function loadheaderexecute(level) {
     * */
     var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">ERA Track</a></li>');
     // li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
     // li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
     // li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
