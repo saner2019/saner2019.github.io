@@ -11,6 +11,12 @@ function loadheaderexecute(level) {
         var indexurl = "index.html";
         var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
         var ERATrackCFP = "cfp/ERATrackCFP.html";
+        var RENETrackCFP = "cfp/RENETrack.html";
+        var ToolDemoTrackCFP = "cfp/ToolTrack.html";
+        var WorkshopTrackCFP = "cfp/WorkshopTrack.html";
+        var JournalFirstTrack = "cfp/JournalFirstTrack.html"
+        var IndustryTrackCPF  = "/cfp/IndustrialTrack.html"
+
         var OrganizeTeam= "team/organize-team.html"
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
@@ -20,6 +26,14 @@ function loadheaderexecute(level) {
         var indexurl = "../index.html";
         var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
         var ERATrackCFP = "../cfp/ERATrackCFP.html";
+        var RENETrackCFP = "../cfp/RENETrack.html";
+        var ToolDemoTrackCFP = "../cfp/ToolTrack.html";
+        var WorkshopTrackCFP = "../cfp/WorkshopTrack.html";
+        var JournalFirstTrack = "../cfp/JournalFirstTrack.html"
+        var IndustryTrackCPF  = "../cfp/IndustrialTrack.html"
+
+
+
         var OrganizeTeam= "../team/organize-team.html"
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
@@ -40,11 +54,11 @@ function loadheaderexecute(level) {
     var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">ERA Track</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
-    // li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+RENETrackCFP+'">RENE Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+WorkshopTrackCFP+'">Work Shop Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+JournalFirstTrack+'">Journal First Track</a></li>');
     navbarcollapseul.append(li_cfp);
 
 
