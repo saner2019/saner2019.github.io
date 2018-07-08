@@ -197,8 +197,8 @@
         function nextDatePager() {
 
             datepager = datepager + 1;
-
-            if (datepager == 7) datepager = 0;
+            //7
+            if (datepager == 6) datepager = 0;
 
             callDatePager(datepager);
 
@@ -209,7 +209,7 @@
 
             datepager = datepager - 1;
 
-            if (datepager == -1) datepager = 6;
+            if (datepager == -1) datepager = 5; //6
 
             callDatePager(datepager);
 
@@ -433,6 +433,7 @@
                                 <p>Author Notification:<span style="float:right;">December 28, 2018</span></p>
 
                                 <p>Camera Ready:<span style="float:right;">January 9, 2018</span></p>
+                                <br>
                             </div>
 
 
@@ -445,6 +446,8 @@
                                 </p>
 
                                 <p>Author Notification:<span style="float:right;">October 9, 2018</span></p>
+                                <br>
+                                <br>
 
                             </div>
 
@@ -456,22 +459,24 @@
                                 </p>
 
                                 <p>Author Notification:<span style="float:right;">December 14, 2018</span></p>
+                                <br>
+                                <br>
 
                             </div>
 
-                            <div id="date7" style="display: None;">
+                            <!--<div id="date7" style="display: None;">-->
 
-                                <h4 style="width:100%; text-align: center;">Research Track</h4>
+                                <!--<h4 style="width:100%; text-align: center;">Industrial Track</h4>-->
 
-                                <p>Abstract Submission:<span style="float:right;<!-- text-decoration:line-through;-->">October 12, 2018 AoE</span>
-                                </p>
+                                <!--<p>Abstract Submission:<span style="float:right;&lt;!&ndash; text-decoration:line-through;&ndash;&gt;">October 12, 2018 AoE</span>-->
+                                <!--</p>-->
 
-                                <p>Paper Submission:<span style="float:right;">October 19, 2018 AoE</span></p>
+                                <!--<p>Paper Submission:<span style="float:right;">October 19, 2018 AoE</span></p>-->
 
-                                <p>Author Notification:<span style="float:right;">November 30, 2018</span></p>
+                                <!--<p>Author Notification:<span style="float:right;">November 30, 2018</span></p>-->
 
-                                <p>Camera Ready:<span style="float:right;">December 21, 2018</span></p>
-                            </div>
+                                <!--<p>Camera Ready:<span style="float:right;">December 21, 2018</span></p>-->
+                            <!--</div>-->
 
                             <ul class="pager" style="margin: 3px 5px 0 5px;">
                                 <li class="previous"><a class="pulsante" href="javascript:prevDatePager();">&laquo;</a>
