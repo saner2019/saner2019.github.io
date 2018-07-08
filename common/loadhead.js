@@ -54,7 +54,7 @@ function loadheaderexecute(level) {
     var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">ERA Track</a></li>');
-    li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
+    // li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+RENETrackCFP+'">RENE Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+WorkshopTrackCFP+'">Workshop Track</a></li>');
