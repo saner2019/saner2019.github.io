@@ -64,7 +64,7 @@ function loadheaderexecute(level) {
 
      // add committee
     var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Committee<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Team</a></li>');
+    li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Committee</a></li>');
     navbarcollapseul.append(li_team);
 
 
