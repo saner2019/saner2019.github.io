@@ -57,7 +57,7 @@ function loadheaderexecute(level) {
     li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+RENETrackCFP+'">RENE Track</a></li>');
-    li_cfp.find('ul').append('<li><a href="'+WorkshopTrackCFP+'">Work Shop Track</a></li>');
+    li_cfp.find('ul').append('<li><a href="'+WorkshopTrackCFP+'">Workshop Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+JournalFirstTrack+'">Journal First Track</a></li>');
     navbarcollapseul.append(li_cfp);
 
