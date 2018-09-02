@@ -18,6 +18,7 @@ function loadheaderexecute(level) {
         var IndustryTrackCPF  = "/cfp/IndustrialTrack.html"
 
         var OrganizeTeam= "team/organize-team.html"
+        var ProgramTeam = "team/program-committee.html"
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
         var VenueHZ="venue/about-Hangzhou.html"
@@ -35,6 +36,7 @@ function loadheaderexecute(level) {
 
 
         var OrganizeTeam= "../team/organize-team.html"
+        var ProgramTeam = "../team/program-committee.html"
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
         var VenueHZ="../venue/about-Hangzhou.html"
@@ -64,7 +66,8 @@ function loadheaderexecute(level) {
 
      // add committee
     var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Committee<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Team</a></li>');
+    li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Committee</a></li>');
+    li_team.find('ul').append('<li><a href="'+ProgramTeam+'">Program Committee</a></li>');
     navbarcollapseul.append(li_team);
 
 
