@@ -94,13 +94,13 @@ function loadCarousel(level) {
     if (level == 1) {
         // var slide1 = "./img_system/ZJU-6.jpeg";
         var slide1 = "./img_system/ZJU-overview-words-white.jpeg";
-        var slide2 = "./img_system/002.jpg";
-        var slide3 = "./img_system/003.jpg";
+        var slide2 = "./img_system/002-wods.jpeg";
+        var slide3 = "./img_system/003-words.jpg";
     } else{
         // var slide1 = "../img_system/ZJU-6.jpeg";
         var slide1 = "../img_system/ZJU-overview-words-white.jpeg";
-        var slide2 = "../img_system/002.jpg";
-        var slide3 = "../img_system/003.jpg";
+        var slide2 = "../img_system/002-wods.jpeg";
+        var slide3 = "../img_system/003-words.jpg";
     }
     var carousel = $('<div class="container">\n' +
         '    <div id="myCarousel" class="carousel slide">\n' +
