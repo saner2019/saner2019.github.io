@@ -22,6 +22,14 @@ function loadheaderexecute(level) {
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
         var VenueHZ="venue/about-Hangzhou.html"
+
+        var workshopsAI4="workshops/AI4Mobile19.html"
+        var workshopsIBF="workshops/IBF2019.html"
+        var workshopsMAINT="workshops/MAINT2019.html"
+        var workshopsICWS="workshops/IWSC2019.html"
+        var workshopsWBTAC="workshops/WBTAC.html"
+        var workshopsBOSE="workshops/IWBOSE.html"
+
     }
     else if (level >= 2) {
         var indexurl = "../index.html";
@@ -40,6 +48,13 @@ function loadheaderexecute(level) {
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
         var VenueHZ="../venue/about-Hangzhou.html"
+
+        var workshopsAI4="../workshops/AI4Mobile19.html"
+        var workshopsIBF="../workshops/IBF2019.html"
+        var workshopsMAINT="../workshops/MAINT2019.html"
+        var workshopsICWS="../workshops/IWSC2019.html"
+        var workshopsWBTAC="../workshops/WBTAC.html"
+        var workshopsBOSE="../workshops/IWBOSE.html"
     }
 
     var navbarheader = $('<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="' + indexurl + '">SANER 2019</a></div>');
@@ -64,7 +79,19 @@ function loadheaderexecute(level) {
     navbarcollapseul.append(li_cfp);
 
 
-     // add committee
+    // add workshops
+
+    var li_workshops=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Workshops<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_workshops.find('ul').append('<li><a href="'+workshopsAI4+'">AI4Mobile 2019</a> </li>')
+    li_workshops.find('ul').append('<li><a href="'+workshopsIBF+'">IBF 2019</a> </li>')
+    li_workshops.find('ul').append('<li><a href="'+workshopsICWS+'">IWSC 2019</a> </li>')
+    li_workshops.find('ul').append('<li><a href="'+workshopsWBTAC+'">WBTAC 2019</a></li>')
+    li_workshops.find('ul').append('<li><a href="'+workshopsBOSE+'">IWBOSE 2019</a></li>')
+    li_workshops.find('ul').append('<li><a href="'+workshopsMAINT+'">MAINT 2019</a></li>')
+    navbarcollapseul.append(li_workshops)
+
+
+    // add committee
     var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Committee<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_team.find('ul').append('<li><a href="'+OrganizeTeam+'">Organizing Committee</a></li>');
     li_team.find('ul').append('<li><a href="'+ProgramTeam+'">Program Committee</a></li>');
@@ -77,6 +104,7 @@ function loadheaderexecute(level) {
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About Zhejiang University</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
     navbarcollapseul.append(li_venue);
+
 
 
     navbarcollapse.append(navbarcollapseul);
