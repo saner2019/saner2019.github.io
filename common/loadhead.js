@@ -111,7 +111,7 @@ function loadheaderexecute(level) {
     //li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About Zhejiang University</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
-    li_venue.find('ul').append('<li><a href="'+VenueHotle+'">Where to stay</a></li>');
+    li_venue.find('ul').append('<li><a href="'+VenueHotle+'">Accommodation</a></li>');
     navbarcollapseul.append(li_venue);
 
     // add registration
