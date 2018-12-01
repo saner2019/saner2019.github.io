@@ -8,7 +8,11 @@ function loadheaderexecute(level) {
     var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 
     if (level == 1) {
+
         var indexurl = "index.html";
+        var registration = "cfp/Registration.html";
+
+
         var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
         var ERATrackCFP = "cfp/ERATrackCFP.html";
         var RENETrackCFP = "cfp/RENETrack.html";
@@ -33,6 +37,8 @@ function loadheaderexecute(level) {
     }
     else if (level >= 2) {
         var indexurl = "../index.html";
+        var registration = "../cfp/Registration.html";
+
         var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
         var ERATrackCFP = "../cfp/ERATrackCFP.html";
         var RENETrackCFP = "../cfp/RENETrack.html";
@@ -105,6 +111,9 @@ function loadheaderexecute(level) {
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
     navbarcollapseul.append(li_venue);
 
+    // add registration
+    var registration_bar=$('<li><a href="'+registration +'">Registration</a></li>')
+    navbarcollapseul.append(registration_bar)
 
 
     navbarcollapse.append(navbarcollapseul);
