@@ -26,6 +26,7 @@ function loadheaderexecute(level) {
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
         var VenueHZ="venue/about-Hangzhou.html"
+        var VenueHotle="venue/about-hotel.html.html"
 
         var workshopsAI4="workshops/AI4Mobile19.html"
         var workshopsIBF="workshops/IBF2019.html"
@@ -54,6 +55,7 @@ function loadheaderexecute(level) {
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
         var VenueHZ="../venue/about-Hangzhou.html"
+        var VenueHotle="../venue/about-hotel.html"
 
         var workshopsAI4="../workshops/AI4Mobile19.html"
         var workshopsIBF="../workshops/IBF2019.html"
@@ -109,6 +111,7 @@ function loadheaderexecute(level) {
     //li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About Zhejiang University</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueHZ+'">About Hangzhou</a></li>');
+    li_venue.find('ul').append('<li><a href="'+VenueHotle+'">Where to stay</a></li>');
     navbarcollapseul.append(li_venue);
 
     // add registration
