@@ -39,6 +39,8 @@ function loadheaderexecute(level) {
         var visa = "travel/visa.html"
         var hotle="travel/about-hotel.html"
 
+        var accepted = "program/accepted.html"
+
 
 
 
@@ -72,6 +74,9 @@ function loadheaderexecute(level) {
 
         var visa = "../travel/visa.html"
         var hotle="../travel/about-hotel.html"
+
+
+        var accepted = "../program/accepted.html"
     }
 
     var navbarheader = $('<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="' + indexurl + '">SANER 2019</a></div>');
@@ -94,6 +99,19 @@ function loadheaderexecute(level) {
     li_cfp.find('ul').append('<li><a href="'+WorkshopTrackCFP+'">Workshop Track</a></li>');
     li_cfp.find('ul').append('<li><a href="'+JournalFirstTrack+'">Journal First Track</a></li>');
     navbarcollapseul.append(li_cfp);
+
+
+
+    // add registration
+    var registration_bar=$('<li><a href="'+registration +'">Registration</a></li>')
+    navbarcollapseul.append(registration_bar)
+
+
+    // add program
+    var program_bar=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    program_bar.find('ul').append('<li><a href="'+accepted+'">Accepted Papers</a></li>');
+    navbarcollapseul.append(program_bar)
+
 
 
     // add workshops
@@ -130,9 +148,7 @@ function loadheaderexecute(level) {
     navbarcollapseul.append(li_travel);
 
 
-    // add registration
-    var registration_bar=$('<li><a href="'+registration +'">Registration</a></li>')
-    navbarcollapseul.append(registration_bar)
+
 
 
     navbarcollapse.append(navbarcollapseul);
@@ -148,15 +164,13 @@ function loadheaderexecute(level) {
 function loadCarousel(level) {
 
     if (level == 1) {
-        // var slide1 = "./img_system/ZJU-6.jpeg";
-        var slide1 = "./img_system/ZJU-overview-words-white.jpeg";
-        var slide2 = "./img_system/002-wods.jpeg";
-        var slide3 = "./img_system/003-words.jpg";
+        var slide1 = "./img_system/ZJU-overview-words.jpeg";
+        var slide2 = "./img_system/002-words.jpeg";
+        var slide3 = "./img_system/003-words.jpeg";
     } else{
-        // var slide1 = "../img_system/ZJU-6.jpeg";
-        var slide1 = "../img_system/ZJU-overview-words-white.jpeg";
-        var slide2 = "../img_system/002-wods.jpeg";
-        var slide3 = "../img_system/003-words.jpg";
+        var slide1 = "../img_system/ZJU-overview-words.jpeg";
+        var slide2 = "../img_system/002-words.jpeg";
+        var slide3 = "../img_system/003-words.jpeg";
     }
     var carousel = $('<div class="container">\n' +
         '    <div id="myCarousel" class="carousel slide">\n' +
