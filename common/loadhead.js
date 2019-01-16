@@ -40,8 +40,8 @@ function loadheaderexecute(level) {
         var hotle="travel/about-hotel.html"
 
         var accepted = "program/accepted.html"
-        var keynotes = "program/keynotes.html"
-        var sessions = "program/sessionList.html"
+        var keynotes = "program/Keynotes.html"
+        var sessions = "program/SessionList.html"
         var schedule = "program/schedule.html" 
 
 
@@ -79,8 +79,8 @@ function loadheaderexecute(level) {
 
 
         var accepted = "../program/accepted.html"
-        var keynotes = "../program/keynotes.html"
-        var sessions = "../program/sessionList.html"
+        var keynotes = "../program/Keynotes.html"
+        var sessions = "../program/SessionList.html"
         var schedule = "../program/schedule.html" 
 
 
