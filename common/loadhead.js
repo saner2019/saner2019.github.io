@@ -41,7 +41,8 @@ function loadheaderexecute(level) {
 
         var accepted = "program/accepted.html"
         var keynotes = "program/keynotes.html"
-
+        var sessions = "program/sessionList.html"
+        var schedule = "program/schedule.html" 
 
 
 
@@ -79,6 +80,9 @@ function loadheaderexecute(level) {
 
         var accepted = "../program/accepted.html"
         var keynotes = "../program/keynotes.html"
+        var sessions = "../program/sessionList.html"
+        var schedule = "../program/schedule.html" 
+
 
     }
 
@@ -114,6 +118,9 @@ function loadheaderexecute(level) {
     var program_bar=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     program_bar.find('ul').append('<li><a href="'+accepted+'">Accepted Papers</a></li>');
     program_bar.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
+    program_bar.find('ul').append('<li><a href="'+sessions+'">Sessions</a></li>');
+    program_bar.find('ul').append('<li><a href="'+schedule+'">Schedule</a></li>');
+
 
     navbarcollapseul.append(program_bar)
 
