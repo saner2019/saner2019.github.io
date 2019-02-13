@@ -119,10 +119,10 @@ function loadheaderexecute(level) {
 
     // add program
     var program_bar=$('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    program_bar.find('ul').append('<li><a href="'+accepted+'">Accepted Papers</a></li>');
+    program_bar.find('ul').append('<li><a href="'+schedule+'">Schedule</a></li>');
     program_bar.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
     program_bar.find('ul').append('<li><a href="'+sessions+'">Sessions</a></li>');
-    program_bar.find('ul').append('<li><a href="'+schedule+'">Schedule</a></li>');
+    program_bar.find('ul').append('<li><a href="'+accepted+'">Accepted Papers</a></li>');
     program_bar.find('ul').append('<li><a href="'+asiaPacificTrack+'">Asia Pacific Track</a></li>');
 
     navbarcollapseul.append(program_bar)
