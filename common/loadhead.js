@@ -26,6 +26,7 @@ function loadheaderexecute(level) {
         var VenueConference="venue/conference-location.html"
         var VenueZJU="venue/about-ZJU.html"
         var VenueHZ="venue/about-Hangzhou.html"
+        var transportation="venue/transportation.html"
 
         var workshopsAI4="workshops/AI4Mobile19.html"
         var workshopsIBF="workshops/IBF2019.html"
@@ -67,6 +68,7 @@ function loadheaderexecute(level) {
         var VenueConference="../venue/conference-location.html"
         var VenueZJU="../venue/about-ZJU.html"
         var VenueHZ="../venue/about-Hangzhou.html"
+        var VenueTRANS="../venue/transportation.html"
 
         var workshopsAI4="../workshops/AI4Mobile19.html"
         var workshopsIBF="../workshops/IBF2019.html"
@@ -153,6 +155,7 @@ function loadheaderexecute(level) {
     //li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Location</a> </li>');
     li_venue.find('ul').append('<li><a href="'+VenueConference+'">Conference Hotel</a></li>');
     li_venue.find('ul').append('<li><a href="'+VenueZJU+'">About Zhejiang University</a> </li>');
+    li_venue.find('ul').append('<li><a href="'+VenueTRANS+'">Transportation</a> </li>');
     navbarcollapseul.append(li_venue);
 
     // add travel
