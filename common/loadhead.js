@@ -45,6 +45,7 @@ function loadheaderexecute(level) {
         var sessions = "program/sessionList.html"
         var schedule = "program/schedule.html" 
         var asiaPacificTrack = "program/asiaPacificTrack.html"
+        var gallery = "program/gallery.html"
 
 
 
@@ -86,6 +87,7 @@ function loadheaderexecute(level) {
         var sessions = "../program/sessionList.html"
         var schedule = "../program/schedule.html"
         var asiaPacificTrack = "../program/asiaPacificTrack.html"
+        var gallery = "../program/gallery.html"
 
 
 
@@ -126,6 +128,7 @@ function loadheaderexecute(level) {
     program_bar.find('ul').append('<li><a href="'+sessions+'">Sessions</a></li>');
     program_bar.find('ul').append('<li><a href="'+accepted+'">Accepted Papers</a></li>');
     program_bar.find('ul').append('<li><a href="'+asiaPacificTrack+'">Asia Pacific Track</a></li>');
+    program_bar.find('ul').append('<li><a href="'+gallery+'">Photo Gallery</a></li>');
 
     navbarcollapseul.append(program_bar)
 
